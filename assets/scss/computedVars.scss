@@ -1,0 +1,19 @@
+:root {
+	// По умолчанию 1920px
+	--height-header: 104px;
+
+	@include laptop {
+		// 1600px и меньше
+		--height-header: 128px;
+	}
+
+	@include smallScreen  {
+		// 1366px и меньше
+		--height-header: 184px;
+	}
+
+	@include bigMobile {
+		// 960px и меньше
+		--height-header: 64px;
+	}
+}
