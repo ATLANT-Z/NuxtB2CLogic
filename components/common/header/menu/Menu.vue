@@ -228,7 +228,6 @@ export default class MenuComponent extends Vue {}
 
     display: flex;
     flex-direction: column;
-    gap: 16px;
 
     overflow: auto;
     @include scrollbarStyle();
@@ -330,7 +329,7 @@ export default class MenuComponent extends Vue {}
     flex-direction: column;
 
     margin-top: auto;
-    padding: 16px;
+    padding: 32px 16px 16px;
   }
 }
 
