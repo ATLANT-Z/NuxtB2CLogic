@@ -55,6 +55,7 @@ class AuthService {
 	}
 
 	private setTokenFromLocalStorage() {
+		if (!process.client) return;
 		const data: object = JSON.parse(localStorage.getItem(this.tokenStoreKey) as string);
 		if (data) this.currentToken.next(AuthToken.fromJson(data));
 	}

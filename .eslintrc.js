@@ -15,6 +15,11 @@ module.exports = {
     },
     rules: {
         'arrow-spacing': 'off',
+        'vue/multiline-html-element-content-newline': 'off',
+        'prefer-const': 'warn',
+        'vue/no-multiple-template-root': 'warn',
+        'eol-last': 'off',
+        'vue/no-unused-vars': 'warn',
         'no-useless-constructor': 'off',
         'unicorn/prefer-includes': 'warn',
         'operator-linebreak': 'off',

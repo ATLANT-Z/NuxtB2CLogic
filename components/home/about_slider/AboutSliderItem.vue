@@ -147,11 +147,11 @@ export default class AboutSliderItemComponent extends Vue {
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
 
-    @include bigMobile {
+    @include bigMobile() {
       box-shadow: none;
 
       border-top-right-radius: inherit;
-      border-bottom-left-radius: none;
+      border-bottom-left-radius: unset;
     }
   }
 

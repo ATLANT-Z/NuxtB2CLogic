@@ -38,7 +38,6 @@ class CartPartCheckoutFormService {
 	}
 
 	private getFromStorage(): PartCartCheckoutForm[] {
-		if (!process.client) return [];
 		const rawStr = localStorage.getItem(this.storageKey);
 		if (!rawStr) return [];
 		const raw: Partial<PartCartCheckoutForm>[] = JSON.parse(rawStr);
@@ -51,7 +50,6 @@ class CartPartCheckoutFormService {
 	}
 
 	saveState(forms: PartCartCheckoutForm[]) {
-		console.log(forms);
 		localStorage.setItem(this.storageKey, JSON.stringify(forms))
 	}
 

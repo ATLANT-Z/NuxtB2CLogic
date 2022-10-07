@@ -1,7 +1,6 @@
 import {OrderBag} from "@shared/models/product/types";
 import {Product} from "@shared/models/product/product";
 import {Money} from "@shared/models/money/money";
-import {LocaleableValue} from "@shared/services/translate.service";
 import {ILocaleableValue, Jsonable} from "@shared/models/tools/tools";
 import {Company} from "@/models/user/user";
 import {PersonNames} from "@/models/user/types";
@@ -10,6 +9,7 @@ import {DeliveryDriver} from "@models/delivery/driver/driver";
 import {DeliveryMethod} from "@models/delivery/method";
 import {ProductViewService} from "@shared/services/product/product.view.service";
 import {Manager} from "@models/manager/manager";
+import {LocaleableValue} from "@shared/models/translate/localeableValue";
 
 export enum OrderOriginStatus {
 	b2b = 'b2b',
@@ -120,7 +120,7 @@ export class ProductHistory {
 	product: Product;
 
 	get TotalSum() {
-		return ProductViewService.getTotalSum(this);
+		return ProductViewService.getTotalForMe(this);
 	}
 }
 

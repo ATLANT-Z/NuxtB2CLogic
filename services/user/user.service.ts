@@ -2,8 +2,9 @@ import {reactive} from "vue";
 import {User} from "@/models/user/user";
 import API from "@/http/API";
 import {BehaviorSubject} from "rxjs";
-import {DictLanguage, translateService} from "@shared/services/translate.service";
+import {translateService} from "@shared/services/translate/translate.service";
 import {authService} from "@services/auth/auth.service";
+import {DictLanguage} from "@shared/models/translate/types";
 
 export class UserService {
 	currentUser: BehaviorSubject<User | null> = new BehaviorSubject<User | null>(null);

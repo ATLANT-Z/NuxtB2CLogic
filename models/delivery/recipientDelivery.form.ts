@@ -1,12 +1,8 @@
-import {Jsonable, PlainIgnore, PlainNoSpace, PlainNoTrim} from "@shared/models/tools/tools";
+import {Jsonable} from "@shared/models/tools/tools";
 import {
 	ClassValidation,
 	myRequired,
-	noSpaces,
-	rule,
-	standardStrLength,
 } from "@shared/models/validators";
-import {sameAs} from "@vuelidate/validators";
 import {DeliveryMethod} from "@models/delivery/method";
 import {DeliveryDriver, DriverForm} from "@models/delivery/driver/driver";
 

@@ -1,11 +1,11 @@
 import {Type} from "class-transformer";
 import {Region} from "@shared/models/region";
 import {ILocaleableValue, Jsonable} from "@shared/models/tools/tools";
-import {LocaleableValue} from "@shared/services/translate.service";
 import {DeliveryMethod} from "@models/delivery/method";
 import {DeliveryDriver} from "@models/delivery/driver/driver";
 import {DeliveryViewService} from "@services/delivery/delivery.view.service";
 import {WarehouseViewService} from "@services/delivery/warehouse.view.service";
+import {LocaleableValue} from "@shared/models/translate/localeableValue";
 
 export class Delivery {
 	id: string;

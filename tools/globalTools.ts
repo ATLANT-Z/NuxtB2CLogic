@@ -1,8 +1,9 @@
 import {PopupService, popupService} from "@shared/services/popup.service";
-import {Icon} from "@shared/type/icons";
+import {Icon} from "@/tools/type/icons";
 import {routeHelper, RouteHelper} from "@shared/helpers/route.helper";
 import {breadcrumbService, BreadcrumbService} from "@shared/services/breadcrumb.service";
 import {createIcons, globalFunctions} from "@shared/tools/globalFunc";
+import {CanActiveService, canActiveService} from "@shared/services/canActive.service";
 
 type GlobalFunctionList = ReturnType<typeof globalFunctions>
 
@@ -14,6 +15,7 @@ declare module 'vue/types/vue' {
 		icons: Record<Icon, Icon>;
 		routeHelper: RouteHelper
 		popupService: PopupService
+		canActiveService: CanActiveService
 		breadcrumbService: BreadcrumbService
 	}
 }
@@ -29,6 +31,7 @@ export const GlobalTools = {
 
 		Vue.prototype.routeHelper = routeHelper;
 		Vue.prototype.popupService = popupService;
+		Vue.prototype.canActiveService = canActiveService;
 
 		Vue.prototype.breadcrumbService = breadcrumbService;
 	}

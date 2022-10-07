@@ -3,10 +3,8 @@
     <section class="footer__cont">
       <div class="content">
         <div class="content__logo-img-w">
-          <img
-            class="content__logo-img"
-            src="../assets/icons/footerMainLogo.svg"
-            alt=""
+          <SvgIcon class="content__logo-img"
+                   :icon="icons['logo-short']"
           />
         </div>
         <div class="content__block">
@@ -14,27 +12,27 @@
             <h4 class="content__title">продукция</h4>
             <div class="content__title-mob-arrow">
               <img
-                class="content__title-mob-arrow-img"
-                src="@/assets/icons/nav-arrow-down.svg"
-                alt=""
-                :class="{ active: openProdList }"
+                  class="content__title-mob-arrow-img"
+                  src="@/assets/icons/nav-arrow-down.svg"
+                  alt=""
+                  :class="{ active: openProdList }"
               />
             </div>
           </div>
           <div
-            class="content__block-list-w"
-            :class="{ active: openProdList }"
-            :style="{ '--list-height': listHeight + 'px' }"
+              class="content__block-list-w"
+              :class="{ active: openProdList }"
+              :style="{ '--list-height': listHeight + 'px' }"
           >
             <ul class="content__block-list" ref="listOfProdItem">
               <li
-                class="content__block-list-item"
-                v-for="item of prodList"
-                :key="item.id"
-                ref="ProdItem"
+                  class="content__block-list-item"
+                  v-for="item of prodList"
+                  :key="item.id"
+                  ref="ProdItem"
               >
                 <a class="content__block-list-link" href="#">
-                  {{ item.title }}</a
+                {{ item.title }}</a
                 >
               </li>
             </ul>
@@ -46,26 +44,26 @@
             <h4 class="content__title">ИНФОРМАЦИЯ</h4>
             <div class="content__title-mob-arrow">
               <img
-                class="content__title-mob-arrow-img"
-                src="@/assets/icons/nav-arrow-down.svg"
-                alt=""
-                :class="{ active: openInfoList }"
+                  class="content__title-mob-arrow-img"
+                  src="@/assets/icons/nav-arrow-down.svg"
+                  alt=""
+                  :class="{ active: openInfoList }"
               />
             </div>
           </div>
           <div
-            class="content__block-list-w"
-            :class="{ active: openInfoList }"
-            :style="{ '--list-height': listInfoHeight + 'px' }"
+              class="content__block-list-w"
+              :class="{ active: openInfoList }"
+              :style="{ '--list-height': listInfoHeight + 'px' }"
           >
             <div class="content__block-list info" ref="listOfInfoItem">
               <a
-                class="content__block-list-link"
-                href="#"
-                v-for="item of infoList"
-                :key="item.id"
-                ref="InfoItem"
-                >{{ item.title }}</a
+                  class="content__block-list-link"
+                  href="#"
+                  v-for="item of infoList"
+                  :key="item.id"
+                  ref="InfoItem"
+              >{{ item.title }}</a
               >
             </div>
           </div>
@@ -82,67 +80,65 @@
           </div>
           <div class="contacts__block-unit">
             <a class="contacts__block-link" href="mailto:support@logicfox.ua">
-              <svg
+            <svg
                 class="contacts__block-link-img"
                 width="29"
                 height="18"
                 viewBox="0 0 29 18"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
+            >
+              <path
                   d="M17.9062 8.99865L29.0014 16.884V1.11328L17.9062 8.99865Z"
                   fill="white"
-                />
-                <path
+              />
+              <path
                   d="M11.0951 8.99775L0 1.11133V16.8831L11.0951 8.99775Z"
                   fill="white"
-                />
-                <path
+              />
+              <path
                   d="M16.3367 10.1133L14.8381 11.1783L14.5026 11.4174L13.9221 11.005L12.6583 10.1153L1.57031 17.9967H27.4359L16.3367 10.1133Z"
                   fill="white"
-                />
-                <path
+              />
+              <path
                   d="M14.4985 9.19062L16.3286 7.88245L27.4237 -0.00390625H1.57031L14.4985 9.19062Z"
                   fill="white"
-                />
-              </svg>
-              <span class="contacts__block-link-text">Задать вопрос</span>
+              />
+            </svg>
+            <span class="contacts__block-link-text">Задать вопрос</span>
             </a>
             <p class="content__caption">
-              Задайте нам любой интересующий вас вопрос.
+            Задайте нам любой интересующий вас вопрос.
             </p>
           </div>
         </div>
         <div class="content__copyrights">
           <div class="content__logo-img-w">
-            <img
-              class="content__logo-img"
-              src="../assets/icons/footerMainLogo.svg"
-              alt=""
+            <SvgIcon class="content__logo-img"
+                     :icon="icons['logo-short']"
             />
           </div>
           <div class="content__copyrights-unit">
             <p class="content__copyrights-caption">
-              Многолетний опыт работы в предоставлении товаров технической
-              направленности создал нашей компании имя, которое можно назвать
-              «известным брендом»
+            Многолетний опыт работы в предоставлении товаров технической
+            направленности создал нашей компании имя, которое можно назвать
+            «известным брендом»
             </p>
             <p class="content__caption">&#169; 2022, Все права защищены.</p>
           </div>
           <div class="content__copyrights-unit">
             <div class="content__copyrights-img-w">
               <img
-                class="content__copyrights-img"
-                src="../assets/icons/footerMasterCardIcon.svg"
-                alt=""
+                  class="content__copyrights-img"
+                  src="@/assets/icons/footerMasterCardIcon.svg"
+                  alt=""
               />
             </div>
             <div class="content__copyrights-img-w">
               <img
-                class="content__copyrights-img"
-                src="../assets/icons/footerVisaIcon.svg"
-                alt=""
+                  class="content__copyrights-img"
+                  src="@/assets/icons/footerVisaIcon.svg"
+                  alt=""
               />
             </div>
           </div>
@@ -153,15 +149,15 @@
           <div class="subscription__block-mailing-info">
             <h4 class="subscription__block-title">рассылка</h4>
             <p class="subscription__block-text">
-              Подпишитесь на рассылку и получайте первыми полезные новости,
-              акции, бонусы и скидки. Без спама!
+            Подпишитесь на рассылку и получайте первыми полезные новости,
+            акции, бонусы и скидки. Без спама!
             </p>
           </div>
           <form class="subscription__block-mailing-form">
             <input
-              class="subscription__block-mailing-input"
-              type="email"
-              placeholder="E-mail"
+                class="subscription__block-mailing-input"
+                type="email"
+                placeholder="E-mail"
             />
             <button class="subscription__block-mailing-btn">Подписаться</button>
           </form>
@@ -172,96 +168,96 @@
             <ul class="subscription__block-social-list">
               <li class="subscription__block-social-list-item">
                 <a href="" class="subscription__block-social-list-item-link">
-                  <svg
+                <svg
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
+                >
+                  <path
                       d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
                       stroke="white"
                       stroke-width="1.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    />
-                  </svg>
+                  />
+                </svg>
                 </a>
               </li>
               <li class="subscription__block-social-list-item">
                 <a href="" class="subscription__block-social-list-item-link">
-                  <svg
+                <svg
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
+                >
+                  <path
                       d="M14 12L10.5 14V10L14 12Z"
                       fill="white"
                       stroke="white"
                       stroke-width="1.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    />
-                    <path
+                  />
+                  <path
                       d="M2 12.708V11.2929C2 8.39754 2 6.94988 2.90549 6.01841C3.81099 5.08694 5.23656 5.04662 8.08769 4.96598C9.43873 4.92777 10.8188 4.90039 12 4.90039C13.1812 4.90039 14.5613 4.92777 15.9123 4.96598C18.7634 5.04662 20.189 5.08694 21.0945 6.01841C22 6.94988 22 8.39754 22 11.2929V12.708C22 15.6033 22 17.0509 21.0945 17.9824C20.189 18.9139 18.7635 18.9542 15.9124 19.0349C14.5613 19.0731 13.1812 19.1005 12 19.1005C10.8188 19.1005 9.43867 19.0731 8.0876 19.0349C5.23651 18.9542 3.81097 18.9139 2.90548 17.9824C2 17.0509 2 15.6033 2 12.708Z"
                       stroke="white"
                       stroke-width="1.5"
-                    />
-                  </svg>
+                  />
+                </svg>
                 </a>
               </li>
               <li class="subscription__block-social-list-item">
                 <a href="" class="subscription__block-social-list-item-link">
-                  <svg
+                <svg
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
+                >
+                  <path
                       d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
                       stroke="white"
                       stroke-width="1.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    />
-                    <path
+                  />
+                  <path
                       d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
                       stroke="white"
                       stroke-width="1.5"
-                    />
-                    <path
+                  />
+                  <path
                       d="M17.5 6.51L17.51 6.49889"
                       stroke="white"
                       stroke-width="1.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    />
-                  </svg>
+                  />
+                </svg>
                 </a>
               </li>
               <li class="subscription__block-social-list-item">
                 <a href="" class="subscription__block-social-list-item-link">
-                  <svg
+                <svg
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
+                >
+                  <path
                       d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.2488 15.7229"
                       stroke="white"
                       stroke-width="1.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    />
-                  </svg>
+                  />
+                </svg>
                 </a>
               </li>
             </ul>
@@ -269,16 +265,16 @@
           <div class="content__copyrights-unit">
             <div class="content__copyrights-img-w">
               <img
-                class="content__copyrights-img"
-                src="../assets/icons/footerMasterCardIcon.svg"
-                alt=""
+                  class="content__copyrights-img"
+                  src="@/assets/icons/footerMasterCardIcon.svg"
+                  alt=""
               />
             </div>
             <div class="content__copyrights-img-w">
               <img
-                class="content__copyrights-img"
-                src="../assets/icons/footerVisaIcon.svg"
-                alt=""
+                  class="content__copyrights-img"
+                  src="@/assets/icons/footerVisaIcon.svg"
+                  alt=""
               />
             </div>
           </div>
@@ -290,10 +286,11 @@
 
 <script lang="ts">
 import {Component, Vue} from "~/tools/version-types";
+import SvgIcon from "@shared/components/svg/SvgIcon.vue";
 
 @Component({
   name: "FooterComponent",
-
+  components: {SvgIcon},
 })
 export default class FooterComponent extends Vue {
   declare $refs: {
@@ -304,30 +301,30 @@ export default class FooterComponent extends Vue {
   };
 
   prodList: any[] = [
-    { id: 1, title: "Комплекты для резервного питания" },
-    { id: 2, title: "Источники бесперебойного питания" },
-    { id: 3, title: "Аккумуляторы AGM" },
-    { id: 4, title: "Литиевые аккумуляторы" },
-    { id: 5, title: "Альтернативная энергетика" },
-    { id: 6, title: "Стабилизаторы напряжения" },
-    { id: 7, title: "Аккумуляторы SILVER" },
-    { id: 8, title: "Электротранспорт" },
-    { id: 9, title: "Автомобильные аккумуляторы" },
-    { id: 10, title: "Компьютерная периферия" },
-    { id: 11, title: "Компьютерная периферия" },
+    {id: 1, title: "Комплекты для резервного питания"},
+    {id: 2, title: "Источники бесперебойного питания"},
+    {id: 3, title: "Аккумуляторы AGM"},
+    {id: 4, title: "Литиевые аккумуляторы"},
+    {id: 5, title: "Альтернативная энергетика"},
+    {id: 6, title: "Стабилизаторы напряжения"},
+    {id: 7, title: "Аккумуляторы SILVER"},
+    {id: 8, title: "Электротранспорт"},
+    {id: 9, title: "Автомобильные аккумуляторы"},
+    {id: 10, title: "Компьютерная периферия"},
+    {id: 11, title: "Компьютерная периферия"},
   ];
 
   infoList: any[] = [
-    { id: 1, title: "О компании" },
-    { id: 2, title: "Контакты" },
-    { id: 3, title: "Блог" },
-    { id: 4, title: "Оплата и Доставка" },
-    { id: 5, title: "Гарантия и Сервисное обслуживание" },
-    { id: 6, title: "Политика конфиденциальности" },
-    { id: 7, title: "Договор публичной оферты" },
-    { id: 8, title: "Сотрудничество" },
-    { id: 9, title: "Инструкции" },
-    { id: 10, title: "Форум" },
+    {id: 1, title: "О компании"},
+    {id: 2, title: "Контакты"},
+    {id: 3, title: "Блог"},
+    {id: 4, title: "Оплата и Доставка"},
+    {id: 5, title: "Гарантия и Сервисное обслуживание"},
+    {id: 6, title: "Политика конфиденциальности"},
+    {id: 7, title: "Договор публичной оферты"},
+    {id: 8, title: "Сотрудничество"},
+    {id: 9, title: "Инструкции"},
+    {id: 10, title: "Форум"},
   ];
 
   listHeight: number = 0;
@@ -350,8 +347,8 @@ export default class FooterComponent extends Vue {
 
       if (this.listHeight === 0)
         this.listHeight =
-          itemRect.height * this.ProdCount +
-          (listRect.height - itemRect.height * this.ProdCount);
+            itemRect.height * this.ProdCount +
+            (listRect.height - itemRect.height * this.ProdCount);
       else this.listHeight = 0;
 
       this.openProdList = !this.openProdList;
@@ -365,8 +362,8 @@ export default class FooterComponent extends Vue {
 
       if (this.listInfoHeight === 0)
         this.listInfoHeight =
-          itemRect.height * this.InfoCount +
-          (listRect.height - itemRect.height * this.InfoCount);
+            itemRect.height * this.InfoCount +
+            (listRect.height - itemRect.height * this.InfoCount);
       else this.listInfoHeight = 0;
 
       this.openInfoList = !this.openInfoList;
@@ -402,6 +399,7 @@ export default class FooterComponent extends Vue {
     }
   }
 }
+
 .content {
   width: 100%;
 
@@ -412,7 +410,7 @@ export default class FooterComponent extends Vue {
     display: none;
     @include mobile {
       display: block;
-      margin-bottom: 16px;
+      margin: 0% auto 16px;
     }
   }
 
@@ -470,6 +468,7 @@ export default class FooterComponent extends Vue {
 
   &__title-mob-arrow-img {
     transition: 0.5s ease;
+
     &.active {
       transform: rotate(180deg);
     }
@@ -585,12 +584,17 @@ export default class FooterComponent extends Vue {
   }
 
   &__logo-img-w {
+    @include fixedHW(64px, 64px);
+
     @include mobile {
       display: none;
     }
   }
 
   &__logo-img {
+    height: 100%;
+    width: 100%;
+    color: white;
   }
 
   &__copyrights-img-w {
@@ -623,6 +627,7 @@ export default class FooterComponent extends Vue {
     color: #ffffff;
   }
 }
+
 .contacts {
   &__block {
     width: 100%;
@@ -669,6 +674,7 @@ export default class FooterComponent extends Vue {
     &:hover .contacts__block-link-text {
       color: $color-main-dark;
     }
+
     &:hover .contacts__block-link-img path {
       fill: $color-main-dark;
     }

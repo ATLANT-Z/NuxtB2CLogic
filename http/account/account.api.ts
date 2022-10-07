@@ -2,11 +2,11 @@ import {SignApi} from "@/http/account/sign/sign.api";
 import {PasswordApi} from "@/http/account/password.api";
 import {RegionApi} from "@/http/account/region.api";
 import {User} from "@/models/user/user";
-import {DictLanguage} from "@/_shared/services/translate.service";
 import ServerApi from "@/_shared/http/abstract/serverApi";
 import {ManagerApi} from "@/http/account/manager.api";
 import {RecipientApi} from "@/http/account/recipient/recipient.api";
 import {TokenApi} from "@/http/account/token/token.api";
+import {DictLanguage} from "@shared/models/translate/types";
 
 export class AccountApi extends ServerApi {
 	protected baseUrl = "account"

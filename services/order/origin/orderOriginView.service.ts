@@ -1,5 +1,6 @@
 import {OrderOriginStatus} from "@models/order/history/orderHistory";
-import {DictionaryWord, translateService} from "@shared/services/translate.service";
+import {translateService} from "@shared/services/translate/translate.service";
+import {DictionaryWord} from "@shared/models/translate/types";
 
 type TranslateMap = Record<OrderOriginStatus, DictionaryWord>
 

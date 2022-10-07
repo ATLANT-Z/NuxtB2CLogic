@@ -3,7 +3,7 @@ import {CartProduct} from "@shared/models/product/product";
 import {ProductCalcInfoService} from "@services/product/productCalcInfo.service";
 import {productCartService} from "@services/cart/productCart.service";
 import {isExist} from "@shared/models/view/tools";
-import {translateService} from "@shared/services/translate.service";
+import {translateService} from "@shared/services/translate/translate.service";
 
 export class WarehouseViewService {
 	static calcIsPassesByWeight(w: Warehouse | undefined | null) {

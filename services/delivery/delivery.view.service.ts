@@ -1,10 +1,11 @@
 import {Delivery} from "@models/delivery/delivery";
-import {DictionaryWord, translateService} from "@shared/services/translate.service";
+import {translateService} from "@shared/services/translate/translate.service";
 import {RecipientDeliveryForm} from "@models/delivery/recipientDelivery.form";
 import {DeliveryMethod, ViewDeliveryMethod} from "@models/delivery/method";
 import {DeliveryDriver} from "@models/delivery/driver/driver";
 import {TipValPair} from "@shared/models/view";
 import {isExist} from "@shared/models/view/tools";
+import {DictionaryWord} from "@shared/models/translate/types";
 
 interface IDeliveryViewStrategyTipShortKeys {
 	readonly Region: string | undefined;

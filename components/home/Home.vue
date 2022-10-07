@@ -215,7 +215,7 @@ export default class HomeComponent extends Vue {
     align-items: center;
     gap: 64px;
 
-    padding: 48px 16px 64px;
+    padding: 24px 16px 64px;
 
     @include mobile {
       gap: 48px;
@@ -637,7 +637,7 @@ export default class HomeComponent extends Vue {
     gap: calc(var(--gap) * 1.5);
 
     background-color: #ffffff;
-    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.2);
 
     border-radius: 8px;
 

@@ -1,9 +1,10 @@
-import {DictionaryWord, translateService} from "@shared/services/translate.service";
+import {translateService} from "@shared/services/translate/translate.service";
 import {DeliveryMethod} from "@models/delivery/method";
 import {DeliveryDriver} from "@models/delivery/driver/driver";
 import {TipValPair} from "@shared/models/view";
 import {DeliveryHistory, OrderOriginStatus} from "@models/order/history/orderHistory";
 import {MethodViewService} from "@services/delivery/delivery.view.service";
+import {DictionaryWord} from "@shared/models/translate/types";
 
 interface IDeliveryHistoryViewStrategyTipShortKeys {
 	readonly Region: string | undefined;

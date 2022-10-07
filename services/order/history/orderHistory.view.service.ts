@@ -1,12 +1,13 @@
 import {DeliveryTrackingStatus, OrderHistory, OrderProcessingStatus} from "@models/order/history/orderHistory";
 import {OrderBagViewService} from "@services/order/orderBag.view.service";
 import {TipValPair} from "@shared/models/view";
-import {DictionaryWord, translateService} from "@shared/services/translate.service";
+import {translateService} from "@shared/services/translate/translate.service";
 import {MethodViewService} from "@services/delivery/delivery.view.service";
 import {ProductCalcInfoService} from "@services/product/productCalcInfo.service";
 import {Money} from "@shared/models/money/money";
 import {ProductFormatInfoService} from "@services/product/productFormatInfo.service";
 import {DeliveryHistoryViewService} from "@services/delivery/history/deliveryHistory.view.service";
+import {DictionaryWord} from "@shared/models/translate/types";
 
 interface OrderHistoryInfoKeys {
 	Manager: string | undefined;

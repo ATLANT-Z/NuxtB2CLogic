@@ -53,7 +53,6 @@ export class ManagerForm extends Jsonable<ManagerForm>() {
 				standardStrLength
 			},
 			middleName: {
-				myRequired,
 				noSpaces,
 				standardStrLength
 			},

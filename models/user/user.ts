@@ -1,11 +1,11 @@
 import {Jsonable} from "@shared/models/tools/tools";
-import {DictLanguage} from "@shared/services/translate.service";
 import {TAX_STATUS} from "@models/logReg";
 import {Balance, Money} from "@shared/models/money/money";
 import {Region} from "@shared/models/region";
 import {PersonNames} from "@models/user/types";
 import {Transform, Type} from "class-transformer";
 import {Currency} from "@shared/models/money/currency";
+import {DictLanguage} from "@shared/models/translate/types";
 
 export enum BAN_REASON {
 	debt = 'debt',
@@ -83,6 +83,7 @@ export class Curator {
 		if (value === 'Менеджер Селянка-Опт') {
 			return 'Юрий Алфёров';
 		}
+		return value
 	}, {toClassOnly: true})
 	name: string;
 

@@ -1,6 +1,7 @@
 import {OrderBag, OrderBagType} from "@shared/models/product/types";
-import {DictionaryWord, translateService} from "@shared/services/translate.service";
+import {translateService} from "@shared/services/translate/translate.service";
 import {Currency} from "@shared/models/money/currency";
+import {DictionaryWord} from "@shared/models/translate/types";
 
 type CurrencyPriorityMap = Record<Currency, number>;
 type BagTypePriorityMap = Record<OrderBagType, number>;

@@ -6,8 +6,9 @@ import {FinanceApi} from "@/http/finance/finance.api";
 import {ShippingApi} from "@/http/shipping/shipping.api";
 import {PurchaseApi} from "@/http/purchase/purchase.api";
 import {AppModeHelper} from "@shared/helpers/appMode.helper";
+import {SharedApi} from "@/http/shared/shared.api";
 
-class API extends ServerApi { //'https://e4df-45-150-67-131.ngrok.io/user' //
+class API extends ServerApi {
 	protected baseUrl: string = AppModeHelper.getIsProd() ? 'https://api.b2b.logicpower.ua/user' : 'https://dev.api.b2b.logicpower.ua/user';
 
 	Account = new AccountApi(this);
@@ -17,6 +18,8 @@ class API extends ServerApi { //'https://e4df-45-150-67-131.ngrok.io/user' //
 	Purchase = new PurchaseApi(this);
 
 	Contentful = new ContentfulApi();
+
+	Shared = new SharedApi(this);
 }
 
 export default new API();
