@@ -1,6 +1,9 @@
 <template>
   <section class="header-catalog" :style="{'--sticky-bottom': StickyBottom + 'px'}">
-    <CanActive id="header-catalog" :excludeIds="['header-menu']" v-slot="{isActive, toggle}">
+    <CanActive :id="canActiveService.names['header-catalog']"
+               :excludeIds="[canActiveService.names['header-menu']]"
+               v-slot="{isActive, toggle}"
+    >
       <div class="header-catalog__bg" :class="{active: isActive}" @click="toggle"></div>
       <button class="header-catalog__btn" @click="toggle">
         <SvgIcon class="header-catalog__btn-icon" :icon="icons['catalog']"/>
@@ -10,7 +13,7 @@
       </button>
       <Catalog
           class="header-catalog__body"
-          :class="{active: isActive}"
+          v-if="isActive"
           :style="{'--sticky-bottom': StickyBottom + 'px'}"
       />
     </CanActive>
@@ -92,6 +95,7 @@ export default class CatalogComponent extends Vue {
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 2;
 
     //height: Calc(100vh - var(--sticky-bottom));
     min-width: 350px;
@@ -99,21 +103,22 @@ export default class CatalogComponent extends Vue {
     max-width: 400px;
 
     background-color: white;
-    opacity: 0;
-    visibility: hidden;
-
-    z-index: 2;
-
     border-bottom-left-radius: 6px;
     box-shadow: 0 0 2px rgba(20, 20, 20, 0.1), 0 0 8px rgba(20, 20, 20, 0.08);
 
-    //@include scrollbarStyle();
+    animation: showCatalog $anim-time ease-in-out;
+    animation-fill-mode: forwards;
 
-    @include anim();
+    @keyframes showCatalog {
+      from {
+        opacity: 0;
+        visibility: hidden;
+      }
 
-    &.active {
-      opacity: 1;
-      visibility: visible;
+      to {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 }

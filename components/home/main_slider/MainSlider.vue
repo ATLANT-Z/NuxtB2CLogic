@@ -74,12 +74,13 @@
     <div class="home-slider__arrows" v-if="slideList.length"
          :style="{
                 '--arrow-color': slideList[currIndex].titleAndBtnColor || null,
-         }">
+         }"
+    >
       <span class="home-slider__arrow left ui-btn" @click="leftClick">
-        <SvgIcon icon="arrowLeft"/>
+        <SvgIcon class="home-slider__arrow-icon" :icon="icons['arrow-left']"/>
       </span>
       <span class="home-slider__arrow right ui-btn" @click="rightClick">
-        <SvgIcon icon="arrowRight"/>
+        <SvgIcon class="home-slider__arrow-icon" :icon="icons['arrow-right']"/>
       </span>
     </div>
     <ul class="home-slider__nav">
@@ -125,7 +126,7 @@ export default class MainSliderComponent extends Vue {
   intervalID = -1;
   intervalSeconds = 8;
 
-  getFormattedUrl(url: string) {
+  getFormattedUrl(url: string | undefined) {
     return LinkBuildHelper.formatUrl(url);
   }
 
@@ -137,7 +138,7 @@ export default class MainSliderComponent extends Vue {
     this.endInterval();
     this.intervalID = setInterval(() => {
       this.moveOn(-1);
-    }, this.intervalSeconds * 1000);
+    }, this.intervalSeconds * 1000) as any;
   }
 
   beforeMount() {
@@ -252,10 +253,9 @@ export default class MainSliderComponent extends Vue {
   display: flex;
   justify-content: center;
 
-  height: 416px;
+  height: 600px;
   width: 100%;
 
-  border-radius: 16px;
   overflow: hidden;
 
   &::before {
@@ -467,7 +467,7 @@ export default class MainSliderComponent extends Vue {
   &__btn {
     @extend %ui-big-btn;
 
-    color: #fff;
+    color: #ffffff;
 
     min-width: 200px;
     background-color: var(--title-and-btn-color);
@@ -603,6 +603,10 @@ export default class MainSliderComponent extends Vue {
 
     &.right {
     }
+  }
+
+  &__arrow-icon {
+    @include fixedHW(16px, 16px);
   }
 
   &__nav {

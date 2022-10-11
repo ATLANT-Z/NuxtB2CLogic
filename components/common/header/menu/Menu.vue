@@ -1,150 +1,161 @@
 <template>
-  <CanActive class="menu" :id="canActiveService.names['header-menu']"
-             v-slot="{isActive, close}"
-  >
-    <div class="menu__bg" :class="{active: isActive}" @click="close"></div>
-    <section class="menu__content"
-             :class="{active: isActive}"
+  <aside class="menu">
+    <CanActive
+        :id="canActiveService.names['header-menu']"
+        :closeWith="[canActiveService.names['menu-catalog']]"
+        v-slot="{isActive, close}"
     >
-      <header class="menu__header">
-        <a class="menu__logo-w" href="#">
+      <div class="menu__bg" :class="{active: isActive}" @click="close"></div>
+      <section class="menu__content"
+               :class="{active: isActive}"
+      >
+        <header class="menu__header">
+          <a class="menu__logo-w" href="#">
           <SvgIcon class="menu__logo" :icon="icons['logo-short']"/>
-        </a>
-        <div class="lang">
-          <button class="lang__item active">
-            Укр
+          </a>
+          <div class="lang">
+            <button class="lang__item active">
+              Укр
+            </button>
+            <button class="lang__item">
+              Рус
+            </button>
+          </div>
+          <button class="menu__close-btn" @click="close">
+            <SvgIcon :icon="icons['cross']" parent-size/>
           </button>
-          <button class="lang__item">
-            Рус
-          </button>
-        </div>
-        <button class="menu__close-btn" @click="close">
-          <SvgIcon :icon="icons['cross']" parent-size/>
-        </button>
-      </header>
-      <main class="menu__main">
-        <div class="menu__link-list" data-general>
-          <a class="menu__link">
-          <SvgIcon class="menu__link-icon" :icon="icons['phone-line']"/>
-          <span>0 800 218 654</span>
-          </a>
-          <a class="menu__link">
-          <SvgIcon class="menu__link-icon" :icon="icons['cart']"/>
-          <span>Корзина</span>
-          </a>
-          <a class="menu__link">
-          <SvgIcon class="menu__link-icon" :icon="icons['compare']"/>
-          <span>Сравнение</span>
-          </a>
-        </div>
-        <div class="menu__link-list" data-tech-support>
-          <CanActive class="menu__toggle-block toggle" v-slot="{isActive, toggle}">
-            <h4 class="toggle__title" @click="toggle">
-              <SvgIcon class="toggle__title-icon"
-                       :icon="icons['multi-bubble']"
-              />
-              <span>Сервис и поддержка</span>
-              <SvgIcon class="toggle__title-arrow"
-                       :icon="icons['arrow-right']"
-                       :class="{active: isActive}"
-              />
-            </h4>
-            <div class="toggle__list" :class="{active: isActive}">
-              <a class="toggle__section-link" href="">
-              Перейти в раздел
-              <SvgIcon class="toggle__section-link-icon" :icon="icons['arrow-stick-right']"></SvgIcon>
-              </a>
-              <a class="toggle__link">
-              Инструкции
-              </a>
-              <a class="toggle__link">
-              Видео-материалы
-              </a>
-            </div>
-          </CanActive>
-          <a class="menu__link">
-          <SvgIcon class="menu__link-icon" :icon="icons['tech-support']"/>
-          <span class="menu__link-text">
-            <span>
-              Техподдержка:
+        </header>
+        <main class="menu__main">
+          <div class="menu__link-list" data-catalog>
+            <button class="menu__link" @click="canActiveService.show(canActiveService.names['menu-catalog'])">
+              <SvgIcon class="menu__link-icon" :icon="icons['catalog']"/>
+              <span>Каталог</span>
+            </button>
+          </div>
+          <div class="menu__link-list" data-general>
+            <a class="menu__link">
+            <SvgIcon class="menu__link-icon" :icon="icons['phone-line']"/>
+            <span>0 800 218 654</span>
+            </a>
+            <a class="menu__link">
+            <SvgIcon class="menu__link-icon" :icon="icons['cart']"/>
+            <span>Корзина</span>
+            </a>
+            <a class="menu__link">
+            <SvgIcon class="menu__link-icon" :icon="icons['compare']"/>
+            <span>Сравнение</span>
+            </a>
+          </div>
+          <div class="menu__link-list" data-tech-support>
+            <CanActive class="menu__toggle-block toggle" v-slot="{isActive, toggle}">
+              <h4 class="toggle__title" @click="toggle">
+                <SvgIcon class="toggle__title-icon"
+                         :icon="icons['multi-bubble']"
+                />
+                <span>Сервис и поддержка</span>
+                <SvgIcon class="toggle__title-arrow"
+                         :icon="icons['arrow-right']"
+                         :class="{active: isActive}"
+                />
+              </h4>
+              <div class="toggle__list" :class="{active: isActive}">
+                <a class="toggle__section-link" href="">
+                Перейти в раздел
+                <SvgIcon class="toggle__section-link-icon" :icon="icons['arrow-stick-right']"></SvgIcon>
+                </a>
+                <a class="toggle__link">
+                Инструкции
+                </a>
+                <a class="toggle__link">
+                Видео-материалы
+                </a>
+              </div>
+            </CanActive>
+            <a class="menu__link">
+            <SvgIcon class="menu__link-icon" :icon="icons['tech-support']"/>
+            <span class="menu__link-text">
+              <span>
+                Техподдержка:
+              </span>
+              <span>
+                +38 (067) 654-07-90
+              </span>
             </span>
+            </a>
+          </div>
+          <div class="menu__link-list" data-info-forum-calc>
+            <CanActive class="menu__toggle-block toggle" v-slot="{isActive, toggle}">
+              <h4 class="toggle__title" @click="toggle">
+                <SvgIcon class="toggle__title-icon"
+                         :icon="icons['text']"
+                />
+                <span>Блог</span>
+                <SvgIcon class="toggle__title-arrow"
+                         :icon="icons['arrow-right']"
+                         :class="{active: isActive}"
+                />
+              </h4>
+              <div class="toggle__list" :class="{active: isActive}">
+                <a class="toggle__section-link" href="">
+                Перейти в раздел
+                <SvgIcon class="toggle__section-link-icon" :icon="icons['arrow-stick-right']"></SvgIcon>
+                </a>
+                <a class="toggle__link">
+                Статьи
+                </a>
+                <a class="toggle__link">
+                Новости
+                </a>
+                <a class="toggle__link">
+                Обзоры
+                </a>
+              </div>
+            </CanActive>
+            <CanActive class="menu__toggle-block toggle" v-slot="{isActive, toggle}">
+              <h4 class="toggle__title" @click="toggle">
+                <SvgIcon class="toggle__title-icon"
+                         :icon="icons['shop']"
+                />
+                <span>О компании</span>
+                <SvgIcon class="toggle__title-arrow"
+                         :icon="icons['arrow-right']"
+                         :class="{active: isActive}"
+                />
+              </h4>
+              <div class="toggle__list" :class="{active: isActive}">
+                <a class="toggle__section-link" href="">
+                Перейти в раздел
+                <SvgIcon class="toggle__section-link-icon" :icon="icons['arrow-stick-right']"></SvgIcon>
+                </a>
+                <a class="toggle__link">
+                Оплата и Доставка
+                </a>
+                <a class="toggle__link">
+                Контакты
+                </a>
+              </div>
+            </CanActive>
+            <a class="menu__link">
+            <SvgIcon class="menu__link-icon" :icon="icons['chat-bubble']"/>
             <span>
-              +38 (067) 654-07-90
+              Форум
             </span>
-          </span>
-          </a>
-        </div>
-        <div class="menu__link-list" data-info-forum-calc>
-          <CanActive class="menu__toggle-block toggle" v-slot="{isActive, toggle}">
-            <h4 class="toggle__title" @click="toggle">
-              <SvgIcon class="toggle__title-icon"
-                       :icon="icons['text']"
-              />
-              <span>Блог</span>
-              <SvgIcon class="toggle__title-arrow"
-                       :icon="icons['arrow-right']"
-                       :class="{active: isActive}"
-              />
-            </h4>
-            <div class="toggle__list" :class="{active: isActive}">
-              <a class="toggle__section-link" href="">
-              Перейти в раздел
-              <SvgIcon class="toggle__section-link-icon" :icon="icons['arrow-stick-right']"></SvgIcon>
-              </a>
-              <a class="toggle__link">
-              Статьи
-              </a>
-              <a class="toggle__link">
-              Новости
-              </a>
-              <a class="toggle__link">
-              Обзоры
-              </a>
-            </div>
-          </CanActive>
-          <CanActive class="menu__toggle-block toggle" v-slot="{isActive, toggle}">
-            <h4 class="toggle__title" @click="toggle">
-              <SvgIcon class="toggle__title-icon"
-                       :icon="icons['shop']"
-              />
-              <span>О компании</span>
-              <SvgIcon class="toggle__title-arrow"
-                       :icon="icons['arrow-right']"
-                       :class="{active: isActive}"
-              />
-            </h4>
-            <div class="toggle__list" :class="{active: isActive}">
-              <a class="toggle__section-link" href="">
-              Перейти в раздел
-              <SvgIcon class="toggle__section-link-icon" :icon="icons['arrow-stick-right']"></SvgIcon>
-              </a>
-              <a class="toggle__link">
-              Оплата и Доставка
-              </a>
-              <a class="toggle__link">
-              Контакты
-              </a>
-            </div>
-          </CanActive>
-          <a class="menu__link">
-          <SvgIcon class="menu__link-icon" :icon="icons['chat-bubble']"/>
-          <span>
-            Форум
-          </span>
-          </a>
-          <a class="menu__link">
-          <SvgIcon class="menu__link-icon" :icon="icons['calculator']"/>
-          <span>
-            Калькулятор для расчета ёмкости АКБ для ИБП
-          </span>
-          </a>
-        </div>
-      </main>
-      <footer class="menu__footer">
-        <MenuSocials/>
-      </footer>
-    </section>
-  </CanActive>
+            </a>
+            <a class="menu__link">
+            <SvgIcon class="menu__link-icon" :icon="icons['calculator']"/>
+            <span>
+              Калькулятор для расчета ёмкости АКБ для ИБП
+            </span>
+            </a>
+          </div>
+        </main>
+        <footer class="menu__footer">
+          <MenuSocials/>
+        </footer>
+        <MenuCatalog/>
+      </section>
+    </CanActive>
+  </aside>
 </template>
 
 <script lang="ts">
@@ -152,12 +163,14 @@ import {Component, Vue} from "~/tools/version-types";
 import SvgIcon from "@shared/components/svg/SvgIcon.vue";
 import MenuSocials from "@components/common/header/menu/MenuSocials.vue";
 import CanActive from "@shared/components/ui/CanActive.vue";
+import MenuCatalog from "@components/common/header/catalog/MenuCatalog.vue";
 
 @Component({
   name: "MenuComponent",
-  components: {CanActive, MenuSocials, SvgIcon},
+  components: {MenuCatalog, CanActive, MenuSocials, SvgIcon},
 })
-export default class MenuComponent extends Vue {}
+export default class MenuComponent extends Vue {
+}
 </script>
 
 <style lang="scss" scoped>
@@ -215,11 +228,14 @@ export default class MenuComponent extends Vue {}
 }
 
 .menu {
+  position: relative;
+  z-index: 300;
+
   &__content {
     position: fixed;
     top: 0;
     left: -100vw;
-    z-index: 5;
+    z-index: 2;
 
     height: 100vh;
     min-width: 350px;

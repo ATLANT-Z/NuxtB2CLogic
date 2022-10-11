@@ -1,5 +1,8 @@
 <template>
   <section class="main-page">
+    <BreadcrumbsAbsolute/>
+    <BreadcrumbsWhite/>
+    <MainSlider/>
     <div class="main-page__slider-category-block">
       <SliderCategoryComponent></SliderCategoryComponent>
       <div class="main-page__about-company">
@@ -185,9 +188,15 @@ import CooperationSliderComponent from './CooperationSlider.vue'
 import AboutUsSliderComponent from './about_slider/AboutUsSlider.vue'
 import Component from 'nuxt-class-component'
 import Vue from 'vue'
+import MainSlider from "@components/home/main_slider/MainSlider.vue";
+import BreadcrumbsAbsolute from "@components/common/header/BreadcrumbsAbsolute.vue";
+import BreadcrumbsWhite from "@components/common/header/BreadcrumbsWhite.vue";
 
 @Component({
   components: {
+    BreadcrumbsWhite,
+    BreadcrumbsAbsolute,
+    MainSlider,
     SliderCategoryComponent,
     CooperationSliderComponent,
     AboutUsSliderComponent
@@ -205,7 +214,6 @@ export default class HomeComponent extends Vue {
   //main-page__slider-category-block
 
   width: 100%;
-  color: $color-main;
 
   @extend %flex-column;
   justify-content: center;

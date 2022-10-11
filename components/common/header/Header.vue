@@ -1,5 +1,5 @@
 <template>
-  <header class="site-header" ref="header">
+  <header class="site-header" ref="header" @transitionend="calcHeaderViewState">
     <section class="site-header__white-row" :class="{hidden: !isShowTop}">
       <div class="site-header__row-in-w">
         <div class="site-header__contact-list">
@@ -40,18 +40,15 @@
         <HeaderProductBtns/>
       </div>
     </section>
-    <nav class="site-header__breadcrumbs" :class="{hidden: !isShowBreadcrumbs}">
-      <div class="site-header__row-in-w breadcrumbs">
-        <a class="breadcrumbs__item ui-link" href="#">
-        Главная
-        </a>
-        <SvgIcon class="breadcrumbs__arrow" :icon="icons['arrow-right']"></SvgIcon>
-        <a class="breadcrumbs__item ui-link" href="#">
-        Продукция
-        </a>
-      </div>
+    <nav class="site-header__breadcrumbs"
+         :class="{
+            hidden: !isShowNav,
+            absolute: isNavAbsolute,
+            white: isNavWhite
+          }"
+    >
+      <Breadcrumbs/>
     </nav>
-    <Menu/>
   </header>
 </template>
 
@@ -65,6 +62,7 @@ import HeaderLang from "@components/common/header/HeaderLang.vue";
 import HeaderProductBtns from "@components/common/header/HeaderProductBtns.vue";
 import {headerViewService} from "@services/header/view/header.view.service";
 import Menu from "@components/common/header/menu/Menu.vue";
+import Breadcrumbs from "@components/common/header/Breadcrumbs.vue";
 
 enum DIR {
   UP = 1,
@@ -73,30 +71,38 @@ enum DIR {
 
 @Component({
   name: "HeaderComponent",
-  components: {Menu, HeaderProductBtns, HeaderLang, Search, MenuBtnComponent, CatalogComponent, SvgIcon},
+  components: {Breadcrumbs, Menu, HeaderProductBtns, HeaderLang, Search, MenuBtnComponent, CatalogComponent, SvgIcon},
 })
 export default class HeaderComponent extends Vue {
+  isShowTop: boolean = true;
+  isShowNav: boolean = true;
+
+  get isNavWhite() {
+    return headerViewService.isBreadcrumbsWhite;
+  }
+
+  get isNavAbsolute() {
+    return headerViewService.isBreadcrumbsAbsolute;
+  }
+
   declare $refs: {
     header: HTMLElement,
     stickyRow: HTMLElement
   }
 
-  isShowTop: boolean = true;
-  isShowBreadcrumbs: boolean = true;
-
   lastScroll: number = 0;
   dir: DIR = DIR.UP;
 
   calcIsShow() {
-    if (window.scrollY < 60) {
+    if (window.scrollY < 40) {
       this.isShowTop = true;
-      this.isShowBreadcrumbs = true;
+      this.isShowNav = true;
       return;
     }
 
-    this.isShowBreadcrumbs = false;
+    this.isShowNav = false;
 
-    if (Math.abs(this.lastScroll - window.scrollY) < 60) return;
+    if (Math.abs(this.lastScroll - window.scrollY) < 40) return;
 
     this.dir = this.lastScroll > window.scrollY ? DIR.UP : DIR.DOWN;
     this.lastScroll = window.scrollY;
@@ -112,6 +118,13 @@ export default class HeaderComponent extends Vue {
   calcHeaderViewState() {
     headerViewService.headerHeight = this.$refs.header.getBoundingClientRect().bottom;
     headerViewService.stickyRowBottom = this.$refs.stickyRow.getBoundingClientRect().bottom;
+
+    window.document.body.style.setProperty('--height-header', headerViewService.stickyRowBottom + 'px');
+  }
+
+  calcHeaderSizeState() {
+    headerViewService.fullHeaderHeight = this.$refs.header.scrollHeight;
+    window.document.body.style.setProperty('--full-height-header', headerViewService.fullHeaderHeight + 'px');
   }
 
   onScroll() {
@@ -122,6 +135,7 @@ export default class HeaderComponent extends Vue {
   onResize() {
     this.calcIsShow();
     this.calcHeaderViewState();
+    this.calcHeaderSizeState();
   }
 
   mounted() {
@@ -139,7 +153,7 @@ export default class HeaderComponent extends Vue {
 
 <style lang="scss" scoped>
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
 
@@ -147,7 +161,7 @@ export default class HeaderComponent extends Vue {
   flex-direction: column;
   align-items: center;
 
-  z-index: 100;
+  z-index: 200;
 
   &__white-row {
     max-height: 64px;
@@ -271,29 +285,21 @@ export default class HeaderComponent extends Vue {
 
     @include anim();
 
+    &.white {
+      color: white;
+    }
+
+    &.absolute {
+      position: absolute;
+      left: 0;
+      top: 100%;
+    }
+
     &.hidden {
       @include anim(0s);
       opacity: 0;
       visibility: hidden;
     }
-  }
-}
-
-.breadcrumbs {
-  display: flex;
-  align-items: center;
-
-  padding: 16px;
-
-  gap: 8px;
-
-  &__item {
-    @include font(14, 16);
-  }
-
-  &__arrow {
-    height: 16px;
-    color: $color-main;
   }
 }
 </style>

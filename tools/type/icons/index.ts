@@ -1,5 +1,7 @@
 export enum projectIcons {
+	'arrow-left' = 1,
 	'arrow-right' = 1,
+	'arrow-stick-left' = 1,
 	'arrow-stick-right' = 1,
 	'calculator' = 1,
 	'cart' = 1,

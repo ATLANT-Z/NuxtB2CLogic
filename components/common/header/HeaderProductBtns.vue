@@ -7,13 +7,13 @@
       3
     </span>
     </a>
-    <a class="header-btns__item cart" href="#">
+    <button class="header-btns__item cart" @click="popupService.show(popupService.names['cart-popup'])">
     <SvgIcon :icon="icons['cart']"/>
     <span class="header-btns__title">Корзина</span>
     <span class="header-btns__counter" v-if="true">
       2
     </span>
-    </a>
+    </button>
   </nav>
 </template>
 

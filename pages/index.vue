@@ -2,10 +2,12 @@
   <div class="site-content">
     <SvgSprite/>
     <Header/>
+    <Menu/>
     <main class="site-main">
-      <Home/>
+      <Nuxt/>
     </main>
     <Footer/>
+    <PopUpCart/>
   </div>
 </template>
 
@@ -15,9 +17,11 @@ import {Component, Vue} from "~/tools/version-types";
 import Header from "@components/common/header/Header.vue";
 import Footer from "@components/common/footer/Footer.vue";
 import SvgSprite from "@shared/components/svg/SvgSprite.vue";
+import Menu from "@components/common/header/menu/Menu.vue";
+import PopUpCart from "@components/popup/PopUpCart.vue";
 
 @Component({
-  components: {SvgSprite, Footer, Header, Home}
+  components: {PopUpCart, Menu, SvgSprite, Footer, Header, Home}
 })
 export default class IndexPageComponent extends Vue {
   mounted() {
@@ -30,6 +34,9 @@ export default class IndexPageComponent extends Vue {
 .site-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+}
+
+.site-main {
+  padding-top: var(--full-height-header);
 }
 </style>

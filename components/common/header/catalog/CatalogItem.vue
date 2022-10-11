@@ -1,16 +1,30 @@
 <template>
-  <div class="catalog__item">
-    <h4 class="catalog__title">
+  <div class="catalog__item" :class="{vertical: isVertical}">
+    <h4 class="catalog__title" @click="toggle" v-if="item.children.length">
       <img class="catalog__icon" v-if="item.img" :src="item.img" :alt="item.name"/>
       <span>
         {{ item.name }}
       </span>
-      <SvgIcon class="catalog__arrow" v-if="item.children.length" :icon="icons['arrow-right']"/>
+      <SvgIcon class="catalog__arrow"
+               :class="{active: isActive}"
+               :icon="icons['arrow-right']"
+               v-if="item.children.length"
+      />
     </h4>
-    <div class="catalog__children" v-if="item.children.length">
+    <a class="catalog__title" href="#" v-if="!item.children.length">
+    {{ item.name }}
+    </a>
+    <div class="catalog__children"
+         :class="{
+              vertical: isVertical,
+              active: isActive
+          }"
+         v-if="item.children.length"
+    >
       <CatalogItemComponent v-for="category in item.children"
                             :key="category.id"
                             :item="category"
+                            :isVertical="isVertical"
       />
     </div>
   </div>
@@ -28,6 +42,13 @@ import {Prop} from "vue-property-decorator";
 })
 export default class CatalogItemComponent extends Vue {
   @Prop({required: true}) item: Category;
+  @Prop({default: false}) isVertical: boolean;
+
+  isActive: boolean = false;
+
+  toggle() {
+    this.isActive = !this.isActive;
+  }
 }
 </script>
 
@@ -42,6 +63,8 @@ export default class CatalogItemComponent extends Vue {
 
     cursor: pointer;
 
+    @include font(16, 18, 400);
+
     &:hover {
       background-color: #efefef;
     }
@@ -52,7 +75,7 @@ export default class CatalogItemComponent extends Vue {
   }
 
   &__icon {
-    @include fixedHW(24px, 24px);
+    @include fixedHW(32px, 32px);
   }
 
   &__arrow {
@@ -66,7 +89,7 @@ export default class CatalogItemComponent extends Vue {
     }
   }
 
-  &__item:hover > &__children {
+  &__item:hover > &__children:not(.vertical) {
     display: flex;
   }
 
@@ -84,6 +107,19 @@ export default class CatalogItemComponent extends Vue {
     flex-direction: column;
 
     background-color: white;
+
+    &.vertical {
+      position: static;
+      min-height: auto;
+      width: 100%;
+
+      display: none;
+      padding: 8px 0 8px 32px;
+
+      &.active {
+        display: flex;
+      }
+    }
   }
 }
 </style>

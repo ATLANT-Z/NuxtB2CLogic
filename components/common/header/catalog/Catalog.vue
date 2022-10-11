@@ -1,12 +1,13 @@
 <template>
-  <aside class="catalog">
+  <article class="catalog">
     <div class="catalog__list">
       <CatalogItem v-for="category in catalog"
                    :key="category.id"
                    :item="category"
+                   :isVertical="isVertical"
       />
     </div>
-  </aside>
+  </article>
 </template>
 
 <script lang="ts">
@@ -14,12 +15,15 @@ import {Component, Vue} from "~/tools/version-types";
 import SvgIcon from "@shared/components/svg/SvgIcon.vue";
 import CatalogItem from "@components/common/header/catalog/CatalogItem.vue";
 import {Category} from "@models/catalog/category";
+import {Prop} from "vue-property-decorator";
 
 @Component({
   name: "CatalogComponent",
   components: {CatalogItem, SvgIcon},
 })
 export default class CatalogComponent extends Vue {
+  @Prop({default: false}) isVertical: boolean;
+
   rawData: any = [
     {
       "id": '1',
@@ -48,7 +52,23 @@ export default class CatalogComponent extends Vue {
         {
           "id": "42",
           "name": "ДБЖ лінійно інтерактивні",
-          "children": []
+          "children": [
+            {
+              "id": "44444",
+              "name": "Поувовуооуоувовооуоу",
+              "children": []
+            },
+            {
+              "id": "555",
+              "name": "Камеры",
+              "children": []
+            },
+            {
+              "id": "5671",
+              "name": "Ip камеры",
+              "children": []
+            }
+          ]
         },
         {
           "id": "45",
