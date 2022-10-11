@@ -4,7 +4,7 @@
     <SvgIcon :icon="icons['compare']"/>
     <span class="header-btns__title">Сравнение</span>
     <span class="header-btns__counter" v-if="true">
-      3
+      3 
     </span>
     </a>
     <button class="header-btns__item cart" @click="popupService.show(popupService.names['cart-popup'])">

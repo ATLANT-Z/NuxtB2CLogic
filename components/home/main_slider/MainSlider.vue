@@ -102,8 +102,8 @@ import SvgIcon from "@shared/components/svg/SvgIcon.vue";
 import API from "@/http/API";
 import {isMouse, isTouch} from "@/_shared/models/view/tools";
 import {BODY_STATE, BodyStateHelper} from "@shared/helpers/view/bodyState.helper";
-import {LinkBuildHelper} from "@shared/helpers/linkBuild.helper";
 import {Component, Vue} from "~/tools/version-types";
+import {LinkBuildHelper} from "@shared/helpers/links/linkBuild.helper";
 
 @Component({
   name: 'MainSliderComponent',
