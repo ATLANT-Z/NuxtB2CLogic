@@ -9,14 +9,22 @@
             alt=""
           />
         </div>
-        <FooterList :thin="true" :title="'Продукция'" :list="prodList">
+        <FooterList :title="'Продукция'" :list="prodList">
           <a class="content__catalog-link" href="#">Перейти в католог</a>
         </FooterList>
         <FooterList :title="'Информация'" :list="infoList" />
         <div class="contacts__block">
           <div class="contacts__block-unit">
             <h4 class="content__title">Контакты</h4>
-            <a class="contacts__text" href="tel:0800208941">0 800 208 941</a>
+            <a class="contacts__text link" href="tel:0800208941"
+              >0 800 208 941</a
+            >
+          </div>
+          <div class="contacts__block-unit">
+            <p class="contacts__text">Техподдержка:</p>
+            <a class="contacts__text link" href="tel:+380676540790"
+              >+38 (067) 654-07-90</a
+            >
           </div>
           <div class="contacts__block-unit">
             <p class="content__caption">График работы CALL-центра</p>
@@ -233,7 +241,7 @@
 
 <script lang="ts">
 import FooterList from "./FooterList.vue";
-import {Component, Vue} from "~/tools/version-types";
+import { Component, Vue } from "~/tools/version-types";
 
 @Component({
   name: "FooterComponent",
@@ -266,6 +274,14 @@ export default class FooterComponent extends Vue {
     { id: 9, title: "Инструкции" },
     { id: 10, title: "Форум" },
   ];
+
+  calcMaxProdList() {
+    this.prodList = this.prodList.slice(0, 8);
+  }
+
+  mounted() {
+    this.calcMaxProdList();
+  }
 }
 </script>
 
@@ -341,10 +357,6 @@ export default class FooterComponent extends Vue {
     @include fontUnify(20, 30, 600);
     text-transform: uppercase;
     color: $color-main;
-
-    & + .contacts__text:hover {
-      color: $color-main-dark;
-    }
   }
 
   &__block-list-link {
@@ -459,6 +471,10 @@ export default class FooterComponent extends Vue {
     color: white;
 
     transition: 0.2s ease-in-out;
+
+    &.link:hover {
+      color: $color-main-dark;
+    }
 
     @include mobile {
       @include fontUnify(16, 20);

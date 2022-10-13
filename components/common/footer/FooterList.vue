@@ -149,7 +149,7 @@ export default class FooterListComponent extends Vue {
     overflow: hidden;
 
     &.thin {
-      max-height: 200px;
+      // max-height: 200px;
 
       @include mobile {
         max-height: none;

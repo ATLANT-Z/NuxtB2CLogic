@@ -77,18 +77,17 @@ export default class AboutSliderItemComponent extends Vue {
 
     @include flex-container;
     align-items: center;
-    gap: 64px;
+    gap: 48px;
 
-    background-color: #ffffff;
+    background-color: white;
 
     box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 
-    padding-right: 64px;
+    padding-right: 48px;
 
     transform: scaleY(0.8);
     transition: 0.7s cubic-bezier(0.18, 0.17, 0.74, 0.76);
-    // cubic-bezier(0.18, 0.17, 0.74, 0.76)
     @include smallScreen {
       height: 540px;
 
@@ -104,7 +103,7 @@ export default class AboutSliderItemComponent extends Vue {
       height: auto;
 
       flex-direction: column;
-      gap: 24px;
+      gap: 16px;
 
       padding: 0;
     }
@@ -174,11 +173,11 @@ export default class AboutSliderItemComponent extends Vue {
   }
 
   &__list-item-info-title {
-    @include fontUnify(64, 80, 500);
+    @include fontUnify(30, 40, 600);
     color: $color-main;
 
     @include smallScreen {
-      @include fontUnify(48, 52, 500);
+      @include fontUnify(24, 32, 600);
     }
 
     @include bigMobile {
@@ -187,13 +186,13 @@ export default class AboutSliderItemComponent extends Vue {
   }
 
   &__list-item-info-text {
-    @include fontUnify(22, 30, 700);
+    @include fontUnify(20, 28);
     letter-spacing: 0.02em;
 
     transition: 0.2s ease;
 
     @include smallScreen {
-      @include fontUnify(20, 26, 700);
+      @include fontUnify(18, 24);
     }
 
     @include bigMobile {

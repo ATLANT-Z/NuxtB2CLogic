@@ -1,22 +1,22 @@
 <template>
   <section class="main-page">
-    <BreadcrumbsAbsolute/>
-    <BreadcrumbsWhite/>
-    <MainSlider/>
+    <BreadcrumbsAbsolute />
+    <BreadcrumbsWhite />
+    <MainSlider />
     <div class="main-page__slider-category-block">
       <SliderCategoryComponent></SliderCategoryComponent>
       <div class="main-page__about-company">
         <div class="main-page__about-company-title-w">
           <h5 class="main-page__about-company-title">О компании</h5>
           <p class="main-page__about-company-text">
-          История развития компании - это история событий, история команды,
-          история жизни конкретных людей. История нашей компании – это
-          ежедневная работа на результат. Достижение большой цели через
-          маленькие дистанции. Не в борьбе с конкурентами, а в здоровом
-          соперничестве, где нет победителей или проигравших. За 15 лет никем
-          не узнаваемый украинский бренд составил серьезную конкуренцию
-          всемирно известным торговым маркам на рынке Украины. Мы сумели
-          добиться высокого качества продукции по доступной цене.
+            История развития компании - это история событий, история команды,
+            история жизни конкретных людей. История нашей компании – это
+            ежедневная работа на результат. Достижение большой цели через
+            маленькие дистанции. Не в борьбе с конкурентами, а в здоровом
+            соперничестве, где нет победителей или проигравших. За 15 лет никем
+            не узнаваемый украинский бренд составил серьезную конкуренцию
+            всемирно известным торговым маркам на рынке Украины. Мы сумели
+            добиться высокого качества продукции по доступной цене.
           </p>
         </div>
       </div>
@@ -25,23 +25,23 @@
     <div class="main-page__team-block">
       <div class="main-page__team-w">
         <p class="main-page__team-text">
-        Команда LogicPower поставила себе новую цель – занять лидирующие
-        позиции в нише продаж для массового (розничного) потребителя. Для
-        улучшения качества и снижения сроков доставки, на территории нашего
-        склада оборудовано несколько отделений крупнейших почтовых операторов
-        Украины. Мы активно работаем над расширением службы технической
-        поддержки, сегодня у нас более 50 сервисных центров по всей территории
-        Украины История развития предполагает выход на новые горизонты, и мы
-        готовы работать на результат!
+          Команда LogicPower поставила себе новую цель – занять лидирующие
+          позиции в нише продаж для массового (розничного) потребителя. Для
+          улучшения качества и снижения сроков доставки, на территории нашего
+          склада оборудовано несколько отделений крупнейших почтовых операторов
+          Украины. Мы активно работаем над расширением службы технической
+          поддержки, сегодня у нас более 50 сервисных центров по всей территории
+          Украины История развития предполагает выход на новые горизонты, и мы
+          готовы работать на результат!
         </p>
       </div>
     </div>
     <div class="main-page__b2b-block">
       <div class="main-page__b2b-bgr">
         <img
-            class="main-page__b2b-bgr-img"
-            src="../../assets/img/mainB2bBckgrnd.png"
-            alt=""
+          class="main-page__b2b-bgr-img"
+          src="../../assets/img/mainB2bBckgrnd.png"
+          alt=""
         />
       </div>
       <div class="main-page__b2b-block-container">
@@ -49,130 +49,122 @@
           <p class="main-page__b2b-logo-title">B2B</p>
         </div>
         <div class="main-page__b2b-heading">
-          <p class="main-page__b2b-heading-title">
-          Удобный портал для заказов и документооборота
-          </p>
+          <h3 class="main-page__b2b-heading-title">
+            Удобный портал для заказов и документооборота
+          </h3>
           <p class="main-page__b2b-heading-text">
-          Через личный кабинет В2В портала можно:
+            Через личный кабинет В2В портала можно:
           </p>
         </div>
         <div class="main-page__b2b-info">
           <div class="main-page__b2b-info-item">
             <p class="main-page__b2b-info-text">
-            Browse to find the images that fit your needs and click to
-            download. Use the on-the-fly color image generation to match your
-            brand identity.
+              Browse to find the images that fit your needs and click to
+              download. Use the on-the-fly color image generation to match your
+              brand identity.
             </p>
           </div>
           <div class="main-page__b2b-info-item">
             <p class="main-page__b2b-info-text">
-            Browse to find the images that fit your needs and click to
-            download. Use the on-the-fly color image generation to match your
-            brand identity.
+              Browse to find the images that fit your needs and click to
+              download. Use the on-the-fly color image generation to match your
+              brand identity.
             </p>
           </div>
           <div class="main-page__b2b-info-item">
             <p class="main-page__b2b-info-text">
-            Browse to find the images that fit your needs and click to
-            download. Use the on-the-fly color image generation to match your
-            brand identity.
+              Browse to find the images that fit your needs and click to
+              download. Use the on-the-fly color image generation to match your
+              brand identity.
             </p>
           </div>
           <div class="main-page__b2b-info-item">
             <p class="main-page__b2b-info-text">
-            Browse to find the images that fit your needs and click to
-            download. Use the on-the-fly color image generation to match your
-            brand identity.
+              Browse to find the images that fit your needs and click to
+              download. Use the on-the-fly color image generation to match your
+              brand identity.
             </p>
           </div>
         </div>
         <a class="main-page__b2b-link" href="https://b2b.logicpower.ua/">
-        Перейти на B2B
+          Перейти на B2B
         </a>
       </div>
     </div>
     <div class="main-page__coop-block">
       <div class="main-page__coop-title-w">
-        <h2 class="main-page__coop-title">
-          МЫ СОТРУДНИЧАЕМ:
-        </h2>
+        <h2 class="main-page__coop-title">Мы сотрудничаем:</h2>
         <p class="main-page__coop--title-text">
-        ТМ LOGICPOWER – 100% ГАРАНТИЯ КАЧЕСТВА ОТ ПРОИЗВОДИТЕЛЯ
+          ТМ LOGICPOWER – 100% ГАРАНТИЯ КАЧЕСТВА ОТ ПРОИЗВОДИТЕЛЯ
         </p>
       </div>
-      <CooperationSliderComponent/>
+      <CooperationSliderComponent />
     </div>
     <div class="main-page__news-block">
       <div class="main-page__news-title-w">
         <h2 class="main-page__news-title">
-          НОВОСТИ
+          Новости
           <span>&#38;</span>
-          СТАТЬИ
+          Статьи
         </h2>
         <p class="main-page__news-title-text">
-        ВСЕ, ЧТО ВАМ НУЖНО ЗНАТЬ О ТЕХНОЛОГИЯХ ОТ LOGICPOWER
+          ВСЕ, ЧТО ВАМ НУЖНО ЗНАТЬ О ТЕХНОЛОГИЯХ ОТ LOGICPOWER
         </p>
       </div>
       <div class="main-page__news-card-w">
         <div class="main-page__news-card">
           <a class="main-page__news-link" href="#">
-          <div class="main-page__news-card-img-cont">
-            <img
+            <div class="main-page__news-card-img-cont">
+              <img
                 class="main-page__news-card-img"
                 src="../../assets/img/mainNewsImg.png"
                 alt=""
-            >
-          </div>
+              />
+            </div>
           </a>
           <div class="main-page__news-card-info">
-            <h3 class="main-page__news-card-title">
-              Новости
-            </h3>
+            <h3 class="main-page__news-card-title">Новости</h3>
             <p class="main-page__news-card-text">
-            Полезная информация о нашей компании, товарах, мероприятиях,
-            акциях и скидках.
+              Полезная информация о нашей компании, товарах, мероприятиях,
+              акциях и скидках.
             </p>
             <a class="main-page__news-link" href="#">перейти</a>
           </div>
         </div>
         <div class="main-page__news-card">
           <a class="main-page__news-link" href="#">
-          <div class="main-page__news-card-img-cont">
-            <img
+            <div class="main-page__news-card-img-cont">
+              <img
                 class="main-page__news-card-img"
                 src="../../assets/img/mainBlogImg.png"
                 alt=""
-            />
-          </div>
+              />
+            </div>
           </a>
           <div class="main-page__news-card-info">
-            <h3 class="main-page__news-card-title">
-              Блог
-            </h3>
+            <h3 class="main-page__news-card-title">Блог</h3>
             <p class="main-page__news-card-text">
-            Обзоры, статьи, консультации специалистов по использованию
-            электрооборудования
+              Обзоры, статьи, консультации специалистов по использованию
+              электрооборудования
             </p>
             <a class="main-page__news-link" href="#">перейти</a>
           </div>
         </div>
         <div class="main-page__news-card">
           <a class="main-page__news-link" href="#">
-          <div class="main-page__news-card-img-cont">
-            <img
+            <div class="main-page__news-card-img-cont">
+              <img
                 class="main-page__news-card-img"
                 src="../../assets/img/mainFaqImg.png"
                 alt=""
-            >
-          </div>
+              />
+            </div>
           </a>
           <div class="main-page__news-card-info">
-            <h3 class="main-page__news-card-title">
-              FAQ
-            </h3>
+            <h3 class="main-page__news-card-title">FAQ</h3>
             <p class="main-page__news-card-text">
-            Ответы на часто задаваемые вопросы, инструкции по эксплуатации
-            техническая поддержка
+              Ответы на часто задаваемые вопросы, инструкции по эксплуатации
+              техническая поддержка
             </p>
             <a class="main-page__news-link" href="#">перейти</a>
           </div>
@@ -183,11 +175,11 @@
 </template>
 
 <script lang="ts">
-import SliderCategoryComponent from './SliderCategory.vue'
-import CooperationSliderComponent from './CooperationSlider.vue'
-import AboutUsSliderComponent from './about_slider/AboutUsSlider.vue'
-import Component from 'nuxt-class-component'
-import Vue from 'vue'
+import SliderCategoryComponent from "./SliderCategory.vue";
+import CooperationSliderComponent from "./CooperationSlider.vue";
+import AboutUsSliderComponent from "./about_slider/AboutUsSlider.vue";
+import Component from "nuxt-class-component";
+import Vue from "vue";
 import MainSlider from "@components/home/main_slider/MainSlider.vue";
 import BreadcrumbsAbsolute from "@components/common/header/BreadcrumbsAbsolute.vue";
 import BreadcrumbsWhite from "@components/common/header/BreadcrumbsWhite.vue";
@@ -199,12 +191,12 @@ import BreadcrumbsWhite from "@components/common/header/BreadcrumbsWhite.vue";
     MainSlider,
     SliderCategoryComponent,
     CooperationSliderComponent,
-    AboutUsSliderComponent
+    AboutUsSliderComponent,
   },
 })
 export default class HomeComponent extends Vue {
   mounted() {
-    this.$route
+    this.$route;
   }
 }
 </script>
@@ -270,7 +262,6 @@ export default class HomeComponent extends Vue {
   &__about-company-title {
     @include fontUnify(28, 40, 600);
     letter-spacing: 0.02em;
-    text-transform: uppercase;
 
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
@@ -308,9 +299,6 @@ export default class HomeComponent extends Vue {
 
       padding: 24px 16px;
     }
-
-    @include fontUnify(20, 28);
-    letter-spacing: 0.02em;
   }
 
   // main-page__team-block
@@ -318,10 +306,10 @@ export default class HomeComponent extends Vue {
     @extend %flex-column;
     align-items: center;
 
-    padding: 64px 16px;
+    padding: 48px 16px;
 
     @include mobile {
-      padding: 48px 16px;
+      padding: 32px 16px;
     }
   }
 
@@ -333,7 +321,7 @@ export default class HomeComponent extends Vue {
     background: linear-gradient(91.75deg, #f36c21 0.14%, #f5821f 99.6%);
     border-radius: 16px;
 
-    padding: 32px 16px;
+    padding: 16px;
 
     @include mobile {
       border-radius: 8px;
@@ -345,7 +333,7 @@ export default class HomeComponent extends Vue {
     width: 100%;
     max-width: 1248px;
 
-    @include fontUnify(20, 28, 600);
+    @include fontUnify(18, 26, 500);
     letter-spacing: 0.02em;
 
     color: #ffffff;
@@ -363,9 +351,7 @@ export default class HomeComponent extends Vue {
     align-items: center;
     justify-content: center;
 
-    min-height: 932px;
-
-    padding: 56px 16px;
+    padding: 32px 16px;
   }
 
   &__b2b-bgr {
@@ -386,10 +372,10 @@ export default class HomeComponent extends Vue {
 
     @extend %flex-column;
     align-items: center;
-    gap: 68px;
+    gap: 48px;
 
     @include mobile {
-      gap: 48px;
+      gap: 32px;
     }
   }
 
@@ -430,9 +416,8 @@ export default class HomeComponent extends Vue {
   }
 
   &__b2b-heading-title {
-    @include fontUnify(36, 44, 700);
+    @include fontUnify(32, 40, 600);
     text-align: center;
-    text-transform: uppercase;
 
     @include mobile {
       @include fontUnify(22, 26, 600);
@@ -440,13 +425,13 @@ export default class HomeComponent extends Vue {
   }
 
   &__b2b-heading-text {
-    @include fontUnify(32, 40, 600);
+    @include fontUnify(20, 30, 600);
+    text-transform: uppercase;
     letter-spacing: 0.02em;
     text-align: center;
-    text-transform: uppercase;
 
     @include mobile {
-      @include fontUnify(16, 20, 700);
+      @include fontUnify(16, 20, 600);
     }
   }
 
@@ -485,12 +470,8 @@ export default class HomeComponent extends Vue {
   }
 
   &__b2b-info-text {
-    @include fontUnify(18, 26, 500);
+    @include fontUnify;
     letter-spacing: 0.02em;
-
-    @include mobile {
-      @include fontUnify;
-    }
   }
 
   &__b2b-link {
@@ -546,9 +527,8 @@ export default class HomeComponent extends Vue {
   }
 
   &__coop-title {
-    @include fontUnify(40, 48, 600);
+    @include fontUnify(32, 42, 600);
     text-align: center;
-    text-transform: uppercase;
 
     @include mobile {
       @include fontUnify(22, 26, 600);
@@ -600,9 +580,9 @@ export default class HomeComponent extends Vue {
   }
 
   &__news-title {
-    @include fontUnify(40, 48, 600);
+    @include fontUnify(32, 40, 600);
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
     & span {
       color: $color-main;

@@ -103,7 +103,6 @@
             stroke-linejoin="round"
           />
         </svg>
-        <!-- <img class="categoty-list__link-img" src="../../assets/icons/mainAllCategoryIcon.svg" alt=""> -->
         <span class="categoty-list__link-text">Все категории</span>
       </a>
     </div>
@@ -150,54 +149,54 @@ export default class SliderCategoryComponent extends Vue {
       text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
       link: "logicpower.ua",
     },
-    // {
-    //   img: "sliderPromImg",
-    //   title: "Комплектующие для ПК",
-    //   text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
-    //   link: "google.com",
-    // },
-    // {
-    //   img: "sliderPromImg",
-    //   title: "EGM аккумуляторы",
-    //   text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
-    //   link: "logicpower.ua",
-    // },
-    // {
-    //   img: "sliderPromImg",
-    //   title: "Комплектующие для ПК",
-    //   text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
-    //   link: "google.com",
-    // },
-    // {
-    //   img: "sliderPromImg",
-    //   title: "EGM аккумуляторы",
-    //   text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
-    //   link: "logicpower.ua",
-    // },
-    // {
-    //   img: "sliderPromImg",
-    //   title: "Комплектующие для ПК",
-    //   text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
-    //   link: "google.com",
-    // },
-    // {
-    //   img: "sliderPromImg",
-    //   title: "EGM аккумуляторы",
-    //   text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
-    //   link: "logicpower.ua",
-    // },
-    // {
-    //   img: "sliderPromImg",
-    //   title: "Комплектующие для ПК",
-    //   text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
-    //   link: "google.com",
-    // },
-    // {
-    //   img: "sliderPromImg",
-    //   title: "EGM аккумуляторы",
-    //   text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
-    //   link: "logicpower.ua",
-    // },
+    {
+      img: "sliderPromImg",
+      title: "Комплектующие для ПК",
+      text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
+      link: "google.com",
+    },
+    {
+      img: "sliderPromImg",
+      title: "EGM аккумуляторы",
+      text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
+      link: "logicpower.ua",
+    },
+    {
+      img: "sliderPromImg",
+      title: "Комплектующие для ПК",
+      text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
+      link: "google.com",
+    },
+    {
+      img: "sliderPromImg",
+      title: "EGM аккумуляторы",
+      text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
+      link: "logicpower.ua",
+    },
+    {
+      img: "sliderPromImg",
+      title: "Комплектующие для ПК",
+      text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
+      link: "google.com",
+    },
+    {
+      img: "sliderPromImg",
+      title: "EGM аккумуляторы",
+      text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
+      link: "logicpower.ua",
+    },
+    {
+      img: "sliderPromImg",
+      title: "Комплектующие для ПК",
+      text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
+      link: "google.com",
+    },
+    {
+      img: "sliderPromImg",
+      title: "EGM аккумуляторы",
+      text: "Благодаря форме выходного напряжения в виде правильной синусоиды, стабилизаторы удерживают максимально точные показатели напряжения",
+      link: "logicpower.ua",
+    },
   ];
 
   currentSlide: number = 0;
@@ -290,7 +289,7 @@ export default class SliderCategoryComponent extends Vue {
 .category-slider {
   @include flex-container(row, center);
   @extend %width-main;
-  height: 767px;
+  height: 540px;
 
   border-radius: 16px;
   overflow: hidden;
@@ -303,8 +302,8 @@ export default class SliderCategoryComponent extends Vue {
     flex-shrink: 2;
     flex-grow: 1;
 
-    padding: 32px 16px;
-    color: #ffffff;
+    padding: 16px;
+    color: white;
     background-color: #393d38;
   }
 
@@ -312,7 +311,7 @@ export default class SliderCategoryComponent extends Vue {
   }
 
   &__prod-title {
-    @include fontUnify(42, 50, 700);
+    @include fontUnify(20, 30, 600);
     text-align: center;
     text-transform: uppercase;
 
@@ -323,7 +322,7 @@ export default class SliderCategoryComponent extends Vue {
     width: 100%;
     height: 1px;
 
-    background-color: #ffffff;
+    background-color: white;
   }
 
   &__prod-list-w {
@@ -341,7 +340,7 @@ export default class SliderCategoryComponent extends Vue {
     justify-content: space-between;
     align-items: center;
 
-    padding-top: 24px;
+    padding-top: 16px;
     z-index: 3;
   }
 
@@ -411,7 +410,7 @@ export default class SliderCategoryComponent extends Vue {
 
   &__prod-list-container {
     width: 100%;
-    height: 468px;
+    height: 292px;
 
     overflow: hidden;
   }
@@ -431,7 +430,7 @@ export default class SliderCategoryComponent extends Vue {
   }
 
   &__prod-item {
-    @include fontUnify(30, 42, 700);
+    @include fontUnify(20, 28);
     letter-spacing: 0.02em;
 
     cursor: pointer;
@@ -443,7 +442,7 @@ export default class SliderCategoryComponent extends Vue {
 
   &__category {
     width: 100%;
-    height: 767px;
+    height: 540px;
 
     @extend %flex-column;
     justify-content: flex-start;
@@ -451,7 +450,7 @@ export default class SliderCategoryComponent extends Vue {
     flex-shrink: 1;
     flex-grow: 2;
 
-    background-color: #ffffff;
+    background-color: white;
     overflow: hidden;
 
     padding: 0 32px;
@@ -465,11 +464,14 @@ export default class SliderCategoryComponent extends Vue {
 
   &__category-item-w {
     width: 100%;
-    height: 767px;
+    height: 540px;
   }
 
   &__category-img {
-    @include flex-container(row, center);
+    max-width: 341px;
+    width: 100%;
+
+    margin: auto;
   }
 
   &__category-title-w {
@@ -483,15 +485,17 @@ export default class SliderCategoryComponent extends Vue {
   &__category-title {
     width: 100%;
 
-    @include fontUnify(32, 40, 600);
+    @include fontUnify(20, 30, 600);
     letter-spacing: 0.02em;
     text-align: start;
     text-transform: uppercase;
   }
 
   &__category-description {
-    @include fontUnify(20, 28);
+    @include fontUnify;
     letter-spacing: 0.02em;
+
+    @include lineClamp(3);
 
     margin-bottom: 16px;
   }
