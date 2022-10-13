@@ -97,9 +97,11 @@ export default {
         loaders: {
             sass: {
                 implementation: require('sass'),
+                sourceMap: false
             },
             scss: {
                 implementation: require('sass'),
+                sourceMap: false
             },
         },
     }

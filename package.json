@@ -49,7 +49,7 @@
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
     "sass": "^1.54.9",
-    "sass-loader": "10.1.1",
+    "sass-loader": "latest",
     "ts-loader": "^8.1.0"
   }
 }
