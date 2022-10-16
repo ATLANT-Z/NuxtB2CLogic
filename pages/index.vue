@@ -1,13 +1,13 @@
 <template>
   <div class="site-content">
     <SvgSprite />
-    <Header />
+    <!-- <Header /> -->
     <Menu />
     <main class="site-main">
-      <Nuxt />
-      <!-- <Checkout /> -->
+      <!-- <Nuxt /> -->
+      <Checkout />
     </main>
-    <Footer />
+    <!-- <Footer /> -->
     <!-- <PopUpCart/> -->
   </div>
 </template>
