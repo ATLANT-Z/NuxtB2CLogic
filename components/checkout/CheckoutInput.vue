@@ -1,38 +1,30 @@
 <template>
-  <div class="input">
-    <input
-      class="input__field"
-      type="text"
-      ref="input"
-      @input="setInputValue"
-      v-model.lazy="inputValue"
-      :class="{ filled: inputValue.length }"
-    />
-    <span class="input__caption">Имя</span>
-    <svg
-      class="input__clear"
-      v-show="inputValue.length"
-      @click="clearInputValue"
-      width="12"
-      height="12"
-      viewBox="0 0 12 12"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0.758265 11.2426L6.00091 6M11.2435 0.75736L6.00091 6M6.00091 6L0.758265 0.75736M6.00091 6L11.2435 11.2426"
-        stroke="#7A7E80"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+  <div class="input__w">
+    <div class="input">
+      <input
+        class="input__field"
+        type="text"
+        ref="input"
+        @input="setInputValue"
+        v-model.lazy="inputValue"
+        :class="{ filled: inputValue.length }"
       />
-    </svg>
-    <!-- <SvgIcon
-      class="input__clear"
-      icon="cross"
-      v-show="inputValue.length"
-      @click="clearInputValue"
-    /> -->
+      <span class="input__caption">Имя</span>
+      <SvgIcon
+        class="input__clear"
+        :icon="icons['cross']"
+        v-show="inputValue.length > 1"
+        @click.native="clearInputValue"
+      />
+      <SvgIcon
+        class="input__error-icon"
+        :icon="icons['info-empty']"
+        v-show="inputValue.length <= 1"
+      />
+    </div>
+    <span class="input__error-caption" v-show="inputValue.length <= 1"
+      >Неккоректные вводные данные</span
+    >
   </div>
 </template>
 
@@ -55,7 +47,7 @@ export default class CheckoutInputComponent extends Vue {
 
   setInputValue() {
     this.inputValue = this.$refs.input.value;
-    this.inputValue = this.inputValue.trim();
+    this.inputValue = this.inputValue.trimLeft();
   }
 
   clearInputValue() {
@@ -67,9 +59,16 @@ export default class CheckoutInputComponent extends Vue {
 
 <style lang="scss" scoped>
 .input {
+  &__w {
+    max-width: 363px;
+    width: 100%;
+
+    @include flex-container(column, center, flex-start);
+    gap: 4px;
+  }
+
   position: relative;
 
-  max-width: 363px;
   width: 100%;
 
   @include flex-container(row, space-between, center);
@@ -84,11 +83,15 @@ export default class CheckoutInputComponent extends Vue {
   transition: 0.2s ease;
 
   &:hover {
-    border-color: $color-main;
+    border-color: $color-bg-black;
   }
 
   &:focus-within {
-    border-color: $color-main;
+    border-color: $color-bg-black;
+  }
+
+  &:has(.input__field.error) {
+    border-color: #fb2424;
   }
 
   &__field {
@@ -120,7 +123,13 @@ export default class CheckoutInputComponent extends Vue {
 
         background-color: white;
 
-        padding: 0 4px;
+        padding-inline: 4px;
+      }
+    }
+
+    &.error {
+      & + .input__caption {
+        color: #fb2424;
       }
     }
   }
@@ -140,13 +149,27 @@ export default class CheckoutInputComponent extends Vue {
   }
 
   &__clear {
-    width: 20px;
-    height: 20px;
+    @include fixedHW(24px, 24px);
 
     color: $color-text-lighter;
 
     user-select: none;
     cursor: pointer;
+  }
+
+  &__error-icon {
+    @include fixedHW(24px, 24px);
+
+    color: #fb2424;
+    user-select: none;
+  }
+
+  &__error-caption {
+    @include fontUnify(12, 16);
+
+    color: #fb2424;
+
+    padding-inline: 8px;
   }
 }
 </style>

@@ -27,6 +27,7 @@ export default class CheckoutHeaderComponent extends Vue {}
 
 <style lang="scss" scoped>
 .header {
+  width: 100%;
   @include flex-container(row, center, center);
 
   background-color: #393d38;

@@ -1,9 +1,9 @@
 <template>
   <article class="layout">
     <CheckoutHeaderComponent></CheckoutHeaderComponent>
-    <div class="checkout__w">
-      <CheckoutInputComponent></CheckoutInputComponent>
-    </div>
+    <main class="main-layout">
+      <CheckoutContactsComponent></CheckoutContactsComponent>
+    </main>
     <CheckoutFooterComponent></CheckoutFooterComponent>
   </article>
 </template>
@@ -13,14 +13,14 @@ import { Component, Vue } from "~/tools/version-types";
 import SvgIcon from "@shared/components/svg/SvgIcon.vue";
 import CheckoutHeaderComponent from "@/components/checkout/CheckoutHeader.vue";
 import CheckoutFooterComponent from "@/components/checkout/CheckoutFooter.vue";
-import CheckoutInputComponent from "@/components/checkout/CheckoutInput.vue";
+import CheckoutContactsComponent from "@/components/checkout/checkout_body/CheckoutContacts.vue";
 
 @Component({
   components: {
     SvgIcon,
     CheckoutHeaderComponent,
     CheckoutFooterComponent,
-    CheckoutInputComponent,
+    CheckoutContactsComponent,
   },
 })
 export default class CheckoutComponent extends Vue {}
@@ -30,15 +30,15 @@ export default class CheckoutComponent extends Vue {}
 .layout {
   width: 100%;
 
-  @include flex-container(column, center);
+  @include flex-container(column, center, center);
   gap: 64px;
-
-  padding: 0 64px;
 }
 
-.checkout__w {
-  background-color: white;
-  padding: 32px;
-  border-radius: 32px;
+.main-layout {
+  @extend %width-main;
+
+  @include flex-container(column, center);
+
+  padding: 0 16px;
 }
 </style>

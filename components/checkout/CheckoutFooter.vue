@@ -48,6 +48,8 @@ export default class CheckoutFooterComponent extends Vue {}
 
 <style lang="scss" scoped>
 .footer {
+  width: 100%;
+
   @include flex-container(row, center, center);
 
   background-color: #393d38;
