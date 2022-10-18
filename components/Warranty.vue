@@ -1,158 +1,128 @@
 <template>
   <section class="warranty">
     <div class="warranty__w">
-      <h1 class="warranty__title">Гарантия</h1>
+      <h1 class="warranty__title">{{ _T("@Warranty") }}</h1>
       <div class="warranty__info">
-        <h2 class="warranty__info-title">Общая информация</h2>
+        <h2 class="warranty__info-title">{{ _T("@General information") }}</h2>
         <p class="warranty__info-title-text">
-          Подтверждением права на бесплатное гарантийное обслуживание служит
-          заполненный <b>гарантийный талон</b> производителя или
-          <b>гарантийный талон</b>
-          магазина «LogicPower». В гарантийном талоне обязательно указываются:
-          модель, серийный номер товара, гарантийный срок и дата продажи. Для
-          получения бесплатного гарантийного обслуживания сохраняйте гарантийный
-          талон на протяжении всего срока эксплуатации товара.
+          {{ _T("@Confirmation of right to free warranty service") }}
         </p>
       </div>
       <div class="warranty__info-b">
-        <h3 class="warranty__info-subtitle">
-          Гарантийные обязательства не распространяются на:
-        </h3>
+        <h4 class="warranty__info-subtitle">
+          {{ _T("@Warranties do not apply to") }}
+        </h4>
         <ul class="warranty__info-subtitle-list">
           <li class="warranty__info-subtitle-list-item">
-            естественный износ или исчерпание ресурса;
+            {{ _T("@Natural wear") }}
           </li>
           <li class="warranty__info-subtitle-list-item">
-            случайные повреждения или дефекты, причиненные клиентом;
+            {{ _T("@Accidental damage") }}
           </li>
           <li class="warranty__info-subtitle-list-item">
-            повреждения в результате стихийных бедствий (природных явлений);
+            {{ _T("@Damage from natural disasters") }}
           </li>
           <li class="warranty__info-subtitle-list-item">
-            повреждения, возникшие вследствие небрежного отношения или
-            использования (несоблюдение температурного режима, воздействие
-            жидкости, запыленности, механическое повреждение, попадание внутрь
-            корпуса посторонних предметов);
+            {{ _T("@Damage caused by careless use") }}
           </li>
           <li class="warranty__info-subtitle-list-item">
-            повреждения, вызванные: аварийным повышением или понижением в сети;
-            неправильным подключением к электросети; дефектами системы, в
-            которой использовался товар, или возникшие в результате соединения и
-            подключения товара к другим изделиям; использованием товара не по
-            назначению или с нарушением правил эксплуатаций.
+            {{ _T("@Damage by emergency rise or fall in network") }}
           </li>
         </ul>
       </div>
       <div class="warranty__info-b">
-        <h3 class="warranty__info-subtitle">
-          Сервисный центр может отказать в гарантийном обслуживании в случае:
-        </h3>
+        <h4 class="warranty__info-subtitle">
+          {{ _T("@Denial of warranty service") }}
+        </h4>
         <ul class="warranty__info-subtitle-list">
           <li class="warranty__info-subtitle-list-item">
-            отсутствия товарного чека;
+            {{ _T("@Denial of warranty service p1") }}
           </li>
           <li class="warranty__info-subtitle-list-item">
-            нарушения сохранности гарантийных пломб;
+            {{ _T("@Denial of warranty service p2") }}
           </li>
           <li class="warranty__info-subtitle-list-item">
-            наличия механических и иных повреждений, возникших вследствие
-            умышленных или неосторожных действий покупателя или третьих лиц;
+            {{ _T("@Denial of warranty service p3") }}
           </li>
           <li class="warranty__info-subtitle-list-item">
-            нарушения правил использования, изложенных в эксплуатационных
-            документах;
+            {{ _T("@Denial of warranty service p4") }}
           </li>
           <li class="warranty__info-subtitle-list-item">
-            несанкционированного вскрытия, ремонта или изменения внутренних
-            коммуникаций и компонентов товара, изменения конструкций или схемы
-            товара; неправильного заполнения гарантированного талона;
+            {{ _T("@Denial of warranty service p5") }}
           </li>
           <li class="warranty__info-subtitle-list-item">
-            если серийный или IMEI номер, находящийся в памяти изделия, изменён,
-            стёрт или не может быть установлен.
+            {{ _T("@Denial of warranty service p6") }}
           </li>
         </ul>
       </div>
       <div class="warranty__info">
         <h2 class="warranty__info-title">
-          Гарантия для покупателей из г. Одесса
+          {{ _T("@Warranty for buyers from Odessa") }}
         </h2>
         <p class="warranty__info-title-text">
-          Для удобства покупателей из г.Одесса, сдать товар на гарантийное
-          обслуживание можно:
+          {{ _T("@For convenience of buyers from Odessa") }}
         </p>
         <ul class="warranty__info-title-list">
           <li class="warranty__info-title-list-item">
-            в одесском магазине сети «LogicPower», в котором товар приобретался
+            {{ _T("@For convenience of buyers from Odessa p1") }}
           </li>
           <li class="warranty__info-title-list-item">
-            с помощью служб доставки по способу, описанному в разделе «Гарантия
-            для покупателей из регионов»
+            {{ _T("@For convenience of buyers from Odessa p2") }}
           </li>
         </ul>
         <p class="warranty__info-title-text">
-          Для сдачи товара на гарантийное обслуживание необходимо иметь
-          заполненный гарантийный талон, а также чек, подтверждающий
-          приобретения товара в нашем магазине.
+          {{ _T("@Return product for warranty service") }}
         </p>
       </div>
       <div class="warranty__info">
         <h2 class="warranty__info-title">
-          Гарантия для покупателей из других регионов
+          {{ _T("@Warranty for buyers from other regions") }}
         </h2>
         <p class="warranty__info-title-text">
-          Для выполнения гарантийных обязательств или ремонта товара,
-          покупателям из других регионов, необходимо:
+          {{ _T("@To repair goods from other regions") }}
         </p>
         <ul class="warranty__info-title-list-num">
           <li class="warranty__info-title-list-item">
-            На отдельном листе указать: ФИО, город, контактный телефон, описание
-            неисправности и вложить его вместе с гарантийным талоном и чеком в
-            посылку с товаром.
+            {{ _T("@To repair goods from other regions p1") }}
           </li>
           <li class="warranty__info-title-list-item">
-            Надежно запаковать пересылаемый товар для исключения его повреждения
-            на перевозчике.
+            {{ _T("@To repair goods from other regions p2") }}
           </li>
           <li class="warranty__info-title-list-item">
-            Выслать посылку на одно из отделений перевозчика, указанных ниже:
+            {{ _T("@To repair goods from other regions p3") }}
           </li>
           <div class="warranty__info-b">
             <p class="warranty__info-title-text">
-              Адрес: г. Одесса, Отделение Новой почты №15
+              {{ _T("@NP office address") }}
             </p>
             <p class="warranty__info-title-text">
-              Получатель: ФЛП "Струкало Ігор Михайлович" (068-082-10-69)
+              {{ _T("@Recipient NP") }}
             </p>
             <p class="warranty__info-title-text">
-              Форма оплаты доставки*: безналичная Обратная доставка денег: не
-              указывать!
+              {{ _T("@Return money delivery") }}
             </p>
             <p class="warranty__info-title-text">
-              Страховая стоимость: минимальное страхование посылки 300грн
+              {{ _T("@Insurance value") }}
+            </p>
+            <p class="warranty__info-title-text">
+              {{ _T("@Warranty delivery payment form") }}
             </p>
           </div>
           <li class="warranty__info-title-list-item">
-            Обязательно сообщить номер декларации по телефону 0800-30-99-88
-            (бесплатно со стационарных телефонов и любых операторов Украины).
+            {{ _T("@To repair goods from other regions p4") }}
           </li>
         </ul>
       </div>
       <div class="warranty__note">
-        <span class="warranty__important">*Обратите внимание!</span>
-        Пересылка товара в ремонт за счет компании "LogicPower" производится
-        только в случае гарантийного ремонта или обслуживания. Остальные
-        посылки, будут получены только если доставка посылки была оплачена
-        отправителем. Будьте внимательны при заполнении реквизитов отправки.
-        Если реквизиты будут указаны не верно, то мы не сможем получить Вашу
-        посылку.
+        <span class="warranty__important">*{{ _T("@Pay attention") }}!</span>
+        {{ _T("@Sent for repair at expense of company") }}
       </div>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import {Component, Vue} from "~/tools/version-types";
+import { Component, Vue } from "~/tools/version-types";
 
 @Component({})
 export default class WarrantyComponent extends Vue {}
@@ -173,12 +143,11 @@ export default class WarrantyComponent extends Vue {}
   }
 
   &__title {
-    @include fontUnify(42, 50, 700);
-    text-transform: uppercase;
+    @include fontUnify(28, 34, 700);
     text-align: center;
 
     @include mobile {
-      @include fontUnify(24, 34, 700);
+      @include fontUnify(24, 28, 700);
     }
   }
 
@@ -193,21 +162,16 @@ export default class WarrantyComponent extends Vue {}
   }
 
   &__info-title {
-    @include fontUnify(32, 42, 600);
-    letter-spacing: 0.02em;
+    @include fontUnify(26, 32, 700);
 
     @include mobile {
-      @include fontUnify(24, 34);
+      @include fontUnify(22, 26, 700);
     }
   }
 
   &__info-title-text {
-    @include fontUnify(18, 24);
+    @include fontUnify;
     letter-spacing: 0.02em;
-
-    @include mobile {
-      @include fontUnify;
-    }
   }
 
   &__info-title-list {
@@ -226,12 +190,8 @@ export default class WarrantyComponent extends Vue {}
   }
 
   &__info-title-list-item {
-    @include fontUnify(18, 24);
+    @include fontUnify;
     letter-spacing: 0.02em;
-
-    @include mobile {
-      @include fontUnify;
-    }
   }
 
   &__info-b {
@@ -242,7 +202,7 @@ export default class WarrantyComponent extends Vue {}
     border: 1px solid #393d38;
     border-radius: 8px;
 
-    padding: 32px;
+    padding: 16px;
 
     @include mobile {
       padding: 8px;
@@ -250,30 +210,33 @@ export default class WarrantyComponent extends Vue {}
   }
 
   &__info-subtitle {
-    @include fontUnify(24, 34);
-    letter-spacing: 0.02em;
+    @include fontUnify(22, 26, 600);
+
+    @include mobile {
+      @include fontUnify(20, 24, 600);
+    }
   }
 
   &__info-subtitle-list {
     @extend %flex-column;
-    gap: 16px;
+    gap: 8px;
 
     list-style: inside;
   }
 
   &__info-subtitle-list-item {
-    @include fontUnify(18, 24);
+    @include fontUnify;
     letter-spacing: 0.02em;
   }
 
   &__note {
-    @include fontUnify(18, 24);
+    @include fontUnify;
     letter-spacing: 0.02em;
 
     border: 1px solid #393d38;
     border-radius: 8px;
 
-    padding: 32px;
+    padding: 16px;
 
     @include mobile {
       padding: 8px;

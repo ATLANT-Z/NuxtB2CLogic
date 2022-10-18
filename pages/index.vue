@@ -5,7 +5,8 @@
     <Menu />
     <main class="site-main">
       <!-- <Nuxt /> -->
-      <Checkout />
+      <!-- <Checkout /> -->
+      <Warranty />
     </main>
     <!-- <Footer /> -->
     <!-- <PopUpCart/> -->
@@ -21,9 +22,19 @@ import SvgSprite from "@shared/components/svg/SvgSprite.vue";
 import Menu from "@components/common/header/menu/Menu.vue";
 import PopUpCart from "@components/popup/PopUpCart.vue";
 import Checkout from "@components/checkout/Checkout.vue";
+import Warranty from "@/components/Warranty.vue";
 
 @Component({
-  components: { PopUpCart, Menu, SvgSprite, Footer, Header, Home, Checkout },
+  components: {
+    PopUpCart,
+    Menu,
+    SvgSprite,
+    Footer,
+    Header,
+    Home,
+    Checkout,
+    Warranty,
+  },
 })
 export default class IndexPageComponent extends Vue {
   mounted() {
