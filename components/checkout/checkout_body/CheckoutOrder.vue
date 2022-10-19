@@ -201,6 +201,10 @@ export default class CheckoutOrderComponent extends Vue {}
     align-self: flex-start;
 
     @include fontUnify;
+    
+    &:hover {
+      color: $color-main;
+    }
   }
 
   &__order-product-code {
