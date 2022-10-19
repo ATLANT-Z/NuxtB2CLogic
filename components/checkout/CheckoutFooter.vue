@@ -56,11 +56,19 @@ export default class CheckoutFooterComponent extends Vue {}
 
   padding: 16px;
 
+  @include mobile {
+    padding-block: 24px;
+  }
+
   &__w {
     @include flex-container(row, space-between, center);
     gap: 32px;
 
     @extend %width-main;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 }
 .callcenter {
@@ -105,6 +113,10 @@ export default class CheckoutFooterComponent extends Vue {}
   @include flex-container(row, space-between, center);
   gap: 32px;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   &__payment {
     @include flex-container(row, space-between, center);
   }
@@ -123,10 +135,6 @@ export default class CheckoutFooterComponent extends Vue {}
   &__logo {
     @include fixedHW(64px, 64px);
     color: white;
-
-    @include mobile {
-      @include fixedHW(48px, 48px);
-    }
   }
 
   &__caption {

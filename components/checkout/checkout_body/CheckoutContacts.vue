@@ -35,6 +35,10 @@ export default class CheckoutContactsComponent extends Vue {}
 
   padding: 32px;
 
+  @include mobile {
+    padding: 16px;
+  }
+
   &__title {
     @include fontUnify(20, 30, 600);
     text-transform: uppercase;

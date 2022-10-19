@@ -5,8 +5,8 @@
     <Menu />
     <main class="site-main">
       <!-- <Nuxt /> -->
-      <!-- <Checkout /> -->
-      <Warranty />
+      <Checkout />
+      <!-- <Warranty /> -->
     </main>
     <!-- <Footer /> -->
     <!-- <PopUpCart/> -->

@@ -1,13 +1,17 @@
 <template>
   <div>
-    <section class="banner contact-ban">
+    <section class="banner contact-banner" ref="banner">
       <div class="banner__img-w">
         <picture>
           <source
-              srcset="../assets/img/contactBannerMob.png"
-              media="(max-width: 680px)"
+            srcset="../assets/img/contactBannerMob.png"
+            media="(max-width: 680px)"
           />
-          <img class="banner__img" src="../assets/img/contactBanner.png" alt=""/>
+          <img
+            class="banner__img"
+            src="../assets/img/contactBanner.png"
+            alt=""
+          />
         </picture>
       </div>
       <div class="banner__content">
@@ -17,36 +21,57 @@
       </div>
     </section>
     <section class="contact">
-      <div class="contact__w">
+      <div class="contact__w" ref="contentWrap">
         <aside class="contact__nav">
           <div class="contact__nav-line"></div>
-          <ul class="contact__nav-list">
+          <ul class="contact__nav-list" ref="navList">
             <li class="contact__nav-list-item">
-              <div class="contact__nav-list-count">1</div>
-              <p class="contact__nav-list-title">Общий номер</p>
+              <a href="#generalPhone" class="contact__nav-list-item">
+                <div class="contact__nav-list-count">1</div>
+                <p class="contact__nav-list-title">Общий номер</p>
+              </a>
             </li>
             <li class="contact__nav-list-item">
-              <div class="contact__nav-list-count">2</div>
-              <p class="contact__nav-list-title">Отдел продаж</p>
+              <a href="#sales" class="contact__nav-list-item">
+                <div class="contact__nav-list-count">2</div>
+                <p class="contact__nav-list-title">Отдел продаж</p>
+              </a>
             </li>
             <li class="contact__nav-list-item">
-              <div class="contact__nav-list-count">3</div>
-              <p class="contact__nav-list-title">Магазины</p>
+              <a href="#shops" class="contact__nav-list-item">
+                <div class="contact__nav-list-count">3</div>
+                <p class="contact__nav-list-title">Магазины</p>
+              </a>
             </li>
             <li class="contact__nav-list-item">
-              <div class="contact__nav-list-count">4</div>
-              <p class="contact__nav-list-title">Техподдержка</p>
+              <a href="#techSupport" class="contact__nav-list-item">
+                <div class="contact__nav-list-count">4</div>
+                <p class="contact__nav-list-title">Техподдержка</p>
+              </a>
             </li>
             <li class="contact__nav-list-item">
-              <div class="contact__nav-list-count">5</div>
-              <p class="contact__nav-list-title">Бухгалтерия</p>
+              <a href="#accounting" class="contact__nav-list-item">
+                <div class="contact__nav-list-count">5</div>
+                <p class="contact__nav-list-title">Бухгалтерия</p>
+              </a>
+            </li>
+            <li class="contact__nav-list-item">
+              <a href="#legal" class="contact__nav-list-item">
+                <div class="contact__nav-list-count">6</div>
+                <p class="contact__nav-list-title">
+                  Юридический адрес и контакты
+                </p>
+              </a>
             </li>
           </ul>
         </aside>
         <div class="contact__main">
           <div class="contact__main-block">
             <div class="contact__block-title-w">
-              <h3 class="contact__block-title">Общий номер</h3>
+              <h3 class="contact__block-title">
+                <span class="ui-anchor" id="generalPhone"></span>
+                Общий номер
+              </h3>
               <div class="contact__block-line"></div>
             </div>
             <div class="contact__block-content">
@@ -55,12 +80,12 @@
                 пятница с 9.00 до 17.30
               </h4>
               <a class="contact__block-tel" href="tel:0800309988">
-              <img src="../assets/icons/phoneIcon.svg" alt=""/>
-              <span>0800309988</span>
+                <img src="../assets/icons/phoneIcon.svg" alt="" />
+                <span>0800309988</span>
               </a>
               <p class="contact__block-text">
-              (звонки с мобильных и стационарных телефонов в пределах Украины
-              бесплатные)
+                (звонки с мобильных и стационарных телефонов в пределах Украины
+                бесплатные)
               </p>
             </div>
             <div class="contact__block-social">
@@ -69,277 +94,97 @@
               </div>
               <div class="contact__block-social-w">
                 <a
-                    class="contact__block-social-link"
-                    href="https://www.instagram.com/logicpower_official/"
+                  class="contact__block-social-link"
+                  href="https://www.instagram.com/logicpower_official/"
                 >
-                <img src="../assets/icons/instaIcon.svg" alt=""/>
+                  <img src="../assets/icons/instaIcon.svg" alt="" />
                 </a>
                 <a
-                    class="contact__block-social-link"
-                    href="https://www.facebook.com/logicpower.official/"
+                  class="contact__block-social-link"
+                  href="https://www.facebook.com/logicpower.official/"
                 >
-                <img src="../assets/icons/fbIcon.svg" alt=""/>
+                  <img src="../assets/icons/fbIcon.svg" alt="" />
                 </a>
                 <a
-                    class="contact__block-social-link"
-                    href="https://www.youtube.com/channel/UCy8sx2LSb7clwULG-X-cCyQ"
+                  class="contact__block-social-link"
+                  href="https://www.youtube.com/channel/UCy8sx2LSb7clwULG-X-cCyQ"
                 >
-                <img src="../assets/icons/ytIcon.svg" alt=""/>
+                  <img src="../assets/icons/ytIcon.svg" alt="" />
                 </a>
               </div>
             </div>
           </div>
           <div class="contact__main-block">
             <div class="contact__block-title-w">
-              <h3 class="contact__block-title">Отдел продаж</h3>
+              <h3 class="contact__block-title">
+                <span class="ui-anchor" id="sales"></span>
+                Отдел продаж
+              </h3>
               <div class="contact__block-line"></div>
             </div>
             <p class="contact__block-text">
-            Звонки с мобильных и стационарных телефонов в пределах Украины
-            бесплатные.
+              Звонки с мобильных и стационарных телефонов в пределах Украины
+              бесплатные.
             </p>
             <div class="contact__block-employee-list">
               <div class="contact__block-employee-item">
                 <div class="contact__block-employee-info">
                   <div class="contact__block-employee-photo">
-                    <img src="../assets/icons/managerPhoto.png" alt=""/>
+                    <img src="../assets/icons/managerPhoto.png" alt="" />
                   </div>
                   <div class="contact__block-employee-data">
                     <p class="contact__block-employee-name">Анна Георгиева</p>
                     <p class="contact__block-employee-position">
-                    Менеджер розничного отдела продаж
+                      Менеджер розничного отдела продаж
                     </p>
                   </div>
                 </div>
                 <div class="contact__block-employee-contact">
                   <div class="contact__block-employee-comm-w">
                     <a
-                        class="contact__block-employee-comm"
-                        href="tel:+380674625740"
+                      class="contact__block-employee-comm"
+                      href="tel:+380674625740"
                     >
-                    <img
+                      <img
                         class="contact__block-employee-comm-img"
                         src="../assets/icons/managerPhoneIcon.svg"
                         alt=""
-                    />
-                    <span>+38 (067) 462-57-40</span>
+                      />
+                      <span>+38 (067) 462-57-40</span>
                     </a>
                     <div class="contact__block-employee-messengers">
                       <a
-                          class="contact__block-employee-messenger"
-                          href="viber://chat?number=12345678"
+                        class="contact__block-employee-messenger"
+                        href="viber://chat?number=12345678"
                       >
-                      <img
+                        <img
                           class="contact__block-employee-messenger-img"
                           src="@/assets/icons/contactsManagerViber.svg"
                           alt=""
-                      />
+                        />
                       </a>
                       <a
-                          class="contact__block-employee-messenger"
-                          href="https://t.me/<USERNAME>"
+                        class="contact__block-employee-messenger"
+                        href="https://t.me/<USERNAME>"
                       >
-                      <img
+                        <img
                           class="contact__block-employee-messenger-img"
                           src="@/assets/icons/contactsManagerTelegram.svg"
                           alt=""
-                      />
+                        />
                       </a>
                     </div>
                   </div>
                   <a
-                      class="contact__block-employee-comm"
-                      href="mailto:a.georgieva@logicfox.pro"
+                    class="contact__block-employee-comm"
+                    href="mailto:a.georgieva@logicfox.pro"
                   >
-                  <img
-                      class="contact__block-employee-comm-img"
-                      src="../assets/icons/managerMailIcon.svg"
-                      alt=""
-                  />
-                  <span>a.georgieva@logicfox.pro</span>
-                  </a>
-                </div>
-              </div>
-              <div class="contact__block-employee-item">
-                <div class="contact__block-employee-info">
-                  <div class="contact__block-employee-photo">
-                    <img src="../assets/icons/managerPhoto.png" alt=""/>
-                  </div>
-                  <div class="contact__block-employee-data">
-                    <p class="contact__block-employee-name">Анна Георгиева</p>
-                    <p class="contact__block-employee-position">
-                    Менеджер розничного отдела продаж
-                    </p>
-                  </div>
-                </div>
-                <div class="contact__block-employee-contact">
-                  <div class="contact__block-employee-comm-w">
-                    <a
-                        class="contact__block-employee-comm"
-                        href="tel:+380674625740"
-                    >
                     <img
-                        class="contact__block-employee-comm-img"
-                        src="../assets/icons/managerPhoneIcon.svg"
-                        alt=""
-                    />
-                    <span>+38 (067) 462-57-40</span>
-                    </a>
-                    <div class="contact__block-employee-messengers">
-                      <a
-                          class="contact__block-employee-messenger"
-                          href="viber://chat?number=12345678"
-                      >
-                      <img
-                          class="contact__block-employee-messenger-img"
-                          src="@/assets/icons/contactsManagerViber.svg"
-                          alt=""
-                      />
-                      </a>
-                      <a
-                          class="contact__block-employee-messenger"
-                          href="https://t.me/<USERNAME>"
-                      >
-                      <img
-                          class="contact__block-employee-messenger-img"
-                          src="@/assets/icons/contactsManagerTelegram.svg"
-                          alt=""
-                      />
-                      </a>
-                    </div>
-                  </div>
-                  <a
-                      class="contact__block-employee-comm"
-                      href="mailto:a.georgieva@logicfox.pro"
-                  >
-                  <img
                       class="contact__block-employee-comm-img"
                       src="../assets/icons/managerMailIcon.svg"
                       alt=""
-                  />
-                  <span>a.georgieva@logicfox.pro</span>
-                  </a>
-                </div>
-              </div>
-              <div class="contact__block-employee-item">
-                <div class="contact__block-employee-info">
-                  <div class="contact__block-employee-photo">
-                    <img src="../assets/icons/managerPhoto.png" alt=""/>
-                  </div>
-                  <div class="contact__block-employee-data">
-                    <p class="contact__block-employee-name">Анна Георгиева</p>
-                    <p class="contact__block-employee-position">
-                    Менеджер розничного отдела продаж
-                    </p>
-                  </div>
-                </div>
-                <div class="contact__block-employee-contact">
-                  <div class="contact__block-employee-comm-w">
-                    <a
-                        class="contact__block-employee-comm"
-                        href="tel:+380674625740"
-                    >
-                    <img
-                        class="contact__block-employee-comm-img"
-                        src="../assets/icons/managerPhoneIcon.svg"
-                        alt=""
                     />
-                    <span>+38 (067) 462-57-40</span>
-                    </a>
-                    <div class="contact__block-employee-messengers">
-                      <a
-                          class="contact__block-employee-messenger"
-                          href="viber://chat?number=12345678"
-                      >
-                      <img
-                          class="contact__block-employee-messenger-img"
-                          src="@/assets/icons/contactsManagerViber.svg"
-                          alt=""
-                      />
-                      </a>
-                      <a
-                          class="contact__block-employee-messenger"
-                          href="https://t.me/<USERNAME>"
-                      >
-                      <img
-                          class="contact__block-employee-messenger-img"
-                          src="@/assets/icons/contactsManagerTelegram.svg"
-                          alt=""
-                      />
-                      </a>
-                    </div>
-                  </div>
-                  <a
-                      class="contact__block-employee-comm"
-                      href="mailto:a.georgieva@logicfox.pro"
-                  >
-                  <img
-                      class="contact__block-employee-comm-img"
-                      src="../assets/icons/managerMailIcon.svg"
-                      alt=""
-                  />
-                  <span>a.georgieva@logicfox.pro</span>
-                  </a>
-                </div>
-              </div>
-              <div class="contact__block-employee-item">
-                <div class="contact__block-employee-info">
-                  <div class="contact__block-employee-photo">
-                    <img src="../assets/icons/managerPhoto.png" alt=""/>
-                  </div>
-                  <div class="contact__block-employee-data">
-                    <p class="contact__block-employee-name">Анна Георгиева</p>
-                    <p class="contact__block-employee-position">
-                    Менеджер розничного отдела продаж
-                    </p>
-                  </div>
-                </div>
-                <div class="contact__block-employee-contact">
-                  <div class="contact__block-employee-comm-w">
-                    <a
-                        class="contact__block-employee-comm"
-                        href="tel:+380674625740"
-                    >
-                    <img
-                        class="contact__block-employee-comm-img"
-                        src="../assets/icons/managerPhoneIcon.svg"
-                        alt=""
-                    />
-                    <span>+38 (067) 462-57-40</span>
-                    </a>
-                    <div class="contact__block-employee-messengers">
-                      <a
-                          class="contact__block-employee-messenger"
-                          href="viber://chat?number=12345678"
-                      >
-                      <img
-                          class="contact__block-employee-messenger-img"
-                          src="@/assets/icons/contactsManagerViber.svg"
-                          alt=""
-                      />
-                      </a>
-                      <a
-                          class="contact__block-employee-messenger"
-                          href="https://t.me/<USERNAME>"
-                      >
-                      <img
-                          class="contact__block-employee-messenger-img"
-                          src="@/assets/icons/contactsManagerTelegram.svg"
-                          alt=""
-                      />
-                      </a>
-                    </div>
-                  </div>
-                  <a
-                      class="contact__block-employee-comm"
-                      href="mailto:a.georgieva@logicfox.pro"
-                  >
-                  <img
-                      class="contact__block-employee-comm-img"
-                      src="../assets/icons/managerMailIcon.svg"
-                      alt=""
-                  />
-                  <span>a.georgieva@logicfox.pro</span>
+                    <span>a.georgieva@logicfox.pro</span>
                   </a>
                 </div>
               </div>
@@ -347,187 +192,196 @@
           </div>
           <div class="contact__main-block">
             <div class="contact__block-title-w">
-              <h3 class="contact__block-title">Магазины</h3>
+              <h3 class="contact__block-title">
+                <span class="ui-anchor" id="shops"></span>
+                Магазины
+              </h3>
               <div class="contact__block-line"></div>
             </div>
             <div class="contact__block-description">
               <h4 class="contact__block-subtitle">г. Одесса</h4>
               <p class="contact__block-info-text">
-              Адрес: Пром.рынок 7 км, 5-я площадка, маг. №630
+                Адрес: Пром.рынок 7 км, 5-я площадка, маг. №630
               </p>
               <p class="contact__block-info-text">
-              График работы: Сб-Чт с 7:30 до 14:00; Пт - выходной
+                График работы: Сб-Чт с 7:30 до 14:00; Пт - выходной
               </p>
             </div>
             <div class="contact__block-map-w">
               <iframe
-                  class="contact__block-map"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10996.652086968357!2d30.6352593!3d46.4454668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x65fa4f41baab6944!2sLogicPower!5e0!3m2!1sru!2sua!4v1592986552060!5m2!1sru!2sua"
-                  frameborder="0"
-                  style="border: 0"
-                  aria-hidden="false"
-                  tabindex="0"
+                class="contact__block-map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10996.652086968357!2d30.6352593!3d46.4454668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x65fa4f41baab6944!2sLogicPower!5e0!3m2!1sru!2sua!4v1592986552060!5m2!1sru!2sua"
+                frameborder="0"
+                style="border: 0"
+                aria-hidden="false"
+                tabindex="0"
               ></iframe>
             </div>
             <div class="contact__block-line"></div>
             <div class="contact__block-description">
               <h4 class="contact__block-subtitle">г. Одесса</h4>
               <p class="contact__block-info-text">
-              Пром.рынок "Староконный", маг. ЗП-3, ЗП-4 павильон - ул.
-              Раскидайловская 31/к
+                Пром.рынок "Староконный", маг. ЗП-3, ЗП-4 павильон - ул.
+                Раскидайловская 31/к
               </p>
               <p class="contact__block-info-text">
-              График работы: Пн-Вс с 8:00 до 16:00
+                График работы: Пн-Вс с 8:00 до 16:00
               </p>
             </div>
             <div class="contact__block-map-w">
               <iframe
-                  class="contact__block-map"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2747.4966733400734!2d30.7112497!3d46.4784769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x510ed329a1dace3d!2sLogicPower!5e0!3m2!1sru!2sua!4v1592986700273!5m2!1sru!2sua"
-                  frameborder="0"
-                  style="border: 0"
-                  aria-hidden="false"
-                  tabindex="0"
+                class="contact__block-map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2747.4966733400734!2d30.7112497!3d46.4784769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x510ed329a1dace3d!2sLogicPower!5e0!3m2!1sru!2sua!4v1592986700273!5m2!1sru!2sua"
+                frameborder="0"
+                style="border: 0"
+                aria-hidden="false"
+                tabindex="0"
               ></iframe>
             </div>
             <div class="contact__block-line"></div>
             <div class="contact__block-description">
               <h4 class="contact__block-subtitle">г. Одесса</h4>
               <p class="contact__block-info-text">
-              Небесної Сотні проспект, 14Б/12 (11)
+                Небесної Сотні проспект, 14Б/12 (11)
               </p>
               <p class="contact__block-info-text">
-              График работы: Пн-Вс с 8:00 до 16:00
+                График работы: Пн-Вс с 8:00 до 16:00
               </p>
             </div>
             <div class="contact__block-map-w">
               <iframe
-                  class="contact__block-map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d343.88882708408215!2d30.710111198252406!3d46.40686231749278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633b0678e4b13%3A0x8c6f39b843a3b43a!2sLogicPower!5e0!3m2!1sru!2sua!4v1632305240162!5m2!1sru!2sua"
-                  frameborder="0"
-                  style="border: 0"
-                  aria-hidden="false"
-                  tabindex="0"
+                class="contact__block-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d343.88882708408215!2d30.710111198252406!3d46.40686231749278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633b0678e4b13%3A0x8c6f39b843a3b43a!2sLogicPower!5e0!3m2!1sru!2sua!4v1632305240162!5m2!1sru!2sua"
+                frameborder="0"
+                style="border: 0"
+                aria-hidden="false"
+                tabindex="0"
               ></iframe>
             </div>
           </div>
           <div class="contact__main-block">
             <div class="contact__block-title-w">
-              <h3 class="contact__block-title">Техподдержка</h3>
+              <h3 class="contact__block-title">
+                <span class="ui-anchor" id="techSupport"></span>
+                Техподдержка
+              </h3>
               <div class="contact__block-line"></div>
             </div>
             <div class="contact__block-description">
               <p class="contact__block-info-text">
-              На все товары, приобретенные на сайте LogicPower, предоставляется
-              гарантия, которая дает право на проведение бесплатного ремонта в
-              течение гарантийного периода, при условии соблюдения правил
-              эксплуатации.
+                На все товары, приобретенные на сайте LogicPower,
+                предоставляется гарантия, которая дает право на проведение
+                бесплатного ремонта в течение гарантийного периода, при условии
+                соблюдения правил эксплуатации.
               </p>
               <p class="contact__block-info-text">
-              Срок гарантии Вашего товара указан в гарантийном талоне или иных
-              документах, прилагаемых к товару.
+                Срок гарантии Вашего товара указан в гарантийном талоне или иных
+                документах, прилагаемых к товару.
               </p>
             </div>
             <a class="contact__block-tel" href="tel:0800309988">
-            <img src="../assets/icons/phoneIcon.svg" alt=""/>
-            <span>Позвонить</span>
+              <img src="../assets/icons/phoneIcon.svg" alt="" />
+              <span>Позвонить</span>
             </a>
             <h4 class="contact__block-subtitle">Сервисные центры:</h4>
             <div class="contact__block-map-w">
               <iframe
-                  class="contact__block-map"
-                  src="https://www.google.com/maps/d/embed?mid=1tlN4jCbZdkwoAuvsD7P-0hJwBGwZVCp6&hl=ru"
-                  frameborder="0"
-                  style="border: 0"
-                  aria-hidden="false"
-                  tabindex="0"
+                class="contact__block-map"
+                src="https://www.google.com/maps/d/embed?mid=1tlN4jCbZdkwoAuvsD7P-0hJwBGwZVCp6&hl=ru"
+                frameborder="0"
+                style="border: 0"
+                aria-hidden="false"
+                tabindex="0"
               ></iframe>
             </div>
             <p class="contact__block-info-text">
-            Уважаемые партнёры и клиенты компании, убедительная просьба при
-            направлении оборудования на гарантийное/постгарантийное
-            обслуживание, очень просим Вас прикреплять к отправке заполненный
-            сопроводительный лист, это поможет нам быстрее устранить неполадку,
-            а так же уменьшить время Вашего ожидания, благодарим Вас за
-            сотрудничество!
+              Уважаемые партнёры и клиенты компании, убедительная просьба при
+              направлении оборудования на гарантийное/постгарантийное
+              обслуживание, очень просим Вас прикреплять к отправке заполненный
+              сопроводительный лист, это поможет нам быстрее устранить
+              неполадку, а так же уменьшить время Вашего ожидания, благодарим
+              Вас за сотрудничество!
             </p>
             <a
-                class="contact__block-tel"
-                href="https://logicpower.ua/flies/blank_servis.xlsx"
+              class="contact__block-tel"
+              href="https://logicpower.ua/flies/blank_servis.xlsx"
             >
-            <img src="../assets/icons/dlArrowIcon.svg" alt=""/>
-            <span>Скачать файл</span>
+              <img src="../assets/icons/dlArrowIcon.svg" alt="" />
+              <span>Скачать файл</span>
             </a>
           </div>
           <div class="contact__main-block">
             <div class="contact__block-title-w">
-              <h3 class="contact__block-title">Бухгалтерия</h3>
+              <h3 class="contact__block-title">
+                <span class="ui-anchor" id="accounting"></span>
+                Бухгалтерия
+              </h3>
               <div class="contact__block-line"></div>
             </div>
             <p class="contact__block-text">
-            По всем вопросам, связанным с оформлением, отправкой или получением
-            документации обращайтесь к бухгалтеру предприятия с которым у вас
-            заключен договор.
+              По всем вопросам, связанным с оформлением, отправкой или
+              получением документации обращайтесь к бухгалтеру предприятия с
+              которым у вас заключен договор.
             </p>
             <div class="contact__block-employee-list">
               <div class="contact__block-employee-item">
                 <div class="contact__block-employee-info">
                   <div class="contact__block-employee-photo">
-                    <img src="../assets/icons/managerPhoto.png" alt=""/>
+                    <img src="../assets/icons/managerPhoto.png" alt="" />
                   </div>
                   <div class="contact__block-employee-data">
                     <p class="contact__block-employee-name">Анна Георгиева</p>
                     <p class="contact__block-employee-position">
-                    Менеджер розничного отдела продаж
+                      Менеджер розничного отдела продаж
                     </p>
                   </div>
                 </div>
                 <div class="contact__block-employee-contact">
                   <div class="contact__block-employee-comm-w">
                     <a
-                        class="contact__block-employee-comm"
-                        href="tel:+380674625740"
+                      class="contact__block-employee-comm"
+                      href="tel:+380674625740"
                     >
-                    <img
+                      <img
                         class="contact__block-employee-comm-img"
                         src="../assets/icons/managerPhoneIcon.svg"
                         alt=""
-                    />
-                    <span>+38 (067) 462-57-40</span>
+                      />
+                      <span>+38 (067) 462-57-40</span>
                     </a>
                     <div class="contact__block-employee-messengers">
                       <a
-                          class="contact__block-employee-messenger"
-                          href="viber://chat?number=12345678"
+                        class="contact__block-employee-messenger"
+                        href="viber://chat?number=12345678"
                       >
-                      <img
+                        <img
                           class="contact__block-employee-messenger-img"
                           src="@/assets/icons/contactsManagerViber.svg"
                           alt=""
-                      />
+                        />
                       </a>
                       <a
-                          class="contact__block-employee-messenger"
-                          href="https://t.me/<USERNAME>"
+                        class="contact__block-employee-messenger"
+                        href="https://t.me/<USERNAME>"
                       >
-                      <img
+                        <img
                           class="contact__block-employee-messenger-img"
                           src="@/assets/icons/contactsManagerTelegram.svg"
                           alt=""
-                      />
+                        />
                       </a>
                     </div>
                   </div>
                   <a
-                      class="contact__block-employee-comm"
-                      href="mailto:a.georgieva@logicfox.pro"
+                    class="contact__block-employee-comm"
+                    href="mailto:a.georgieva@logicfox.pro"
                   >
-                  <img
+                    <img
                       class="contact__block-employee-comm-img"
                       src="../assets/icons/managerMailIcon.svg"
                       alt=""
-                  />
-                  <span>a.georgieva@logicfox.pro</span>
+                    />
+                    <span>a.georgieva@logicfox.pro</span>
                   </a>
                 </div>
               </div>
@@ -535,27 +389,30 @@
           </div>
           <div class="contact__main-block">
             <div class="contact__block-title-w">
-              <h3 class="contact__block-title">юридический адрес и контакты</h3>
+              <h3 class="contact__block-title">
+                <span class="ui-anchor" id="legal"></span>
+                юридический адрес и контакты
+              </h3>
               <div class="contact__block-line"></div>
             </div>
             <div class="contact__block-content">
               <h4 class="contact__block-subtitle">Юридична адреса:</h4>
               <p class="contact__block-info-text">
-              Україна, 65007, Одеська обл., місто Одеса, вул Мала Арнаутська,
-              будинок 105/1, квартира 11
+                Україна, 65007, Одеська обл., місто Одеса, вул Мала Арнаутська,
+                будинок 105/1, квартира 11
               </p>
               <a
-                  class="contact__block-legal-contacts"
-                  href="mailto:info@logicpower.ua"
+                class="contact__block-legal-contacts"
+                href="mailto:info@logicpower.ua"
               >
-              <img src="../assets/icons/managerMailIcon.svg" alt=""/>
-              <span>E-mail:</span>
-              <span>info@logicpower.ua</span>
+                <img src="../assets/icons/managerMailIcon.svg" alt="" />
+                <span>E-mail:</span>
+                <span>info@logicpower.ua</span>
               </a>
               <a class="contact__block-legal-contacts" href="tel:0674886362">
-              <img src="../assets/icons/managerPhoneIcon.svg" alt=""/>
-              <span>Телефон:</span>
-              <span>067 488 63 62</span>
+                <img src="../assets/icons/managerPhoneIcon.svg" alt="" />
+                <span>Телефон:</span>
+                <span>067 488 63 62</span>
               </a>
             </div>
           </div>
@@ -566,15 +423,14 @@
 </template>
 
 <script lang="ts">
-import {Component, Vue} from "~/tools/version-types";
+import { Options, Vue } from "~/tools/version-types";
 
-@Component({})
-export default class ContactComponent extends Vue {
-}
+@Options({})
+export default class ContactComponent extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-.banner.contact-ban {
+.banner.contact-banner {
   margin-bottom: 0;
 }
 
@@ -604,9 +460,9 @@ export default class ContactComponent extends Vue {
   }
 
   &__nav {
+    --circ-r: 24px;
+
     position: relative;
-    margin-right: 201px;
-    padding-left: 20px;
 
     @include bigMobile {
       display: none;
@@ -614,28 +470,42 @@ export default class ContactComponent extends Vue {
   }
 
   &__nav-line {
+    position: absolute;
+    left: var(--circ-r);
+    transform: translateX(-50%);
+
     height: 100%;
     width: 8px;
 
-    background-color: #ffffff;
+    border-radius: 6px;
+
+    background-color: white;
+    z-index: -1;
   }
 
   &__nav-list {
-    position: absolute;
-    top: 80px;
-    left: 0;
+    width: 100%;
+    max-width: 230px;
+
+    position: sticky;
+    top: calc(16px + var(--height-header, 0px));
+
+    @extend %flex-column;
+    gap: 32px;
+
+    padding: 16px 0;
   }
 
   &__nav-list-item {
     @include flex-container(row, flex-start, center);
-    gap: 32px;
+    gap: 16px;
 
     cursor: pointer;
   }
 
   &__nav-list-count {
-    width: 48px;
-    height: 48px;
+    min-width: calc(var(--circ-r) * 2);
+    height: calc(var(--circ-r) * 2);
 
     @include flex-container(row, center, center);
 
@@ -644,7 +514,7 @@ export default class ContactComponent extends Vue {
     color: $color-main;
 
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: white;
 
     &:hover {
       color: $color-main-dark;
@@ -655,7 +525,7 @@ export default class ContactComponent extends Vue {
     @include fontUnify(20, 28);
     letter-spacing: 0.02em;
 
-    color: #8a8a8a;
+    color: $color-text-lighter;
 
     &:hover {
       color: $color-main-dark;
@@ -675,14 +545,16 @@ export default class ContactComponent extends Vue {
   }
 
   &__main-block {
+    --local-pad: 32px;
+
     @extend %flex-column;
     gap: 36px;
 
-    background: #ffffff;
+    background: white;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 
-    padding: 32px;
+    padding: var(--local-pad);
 
     @include mobile {
       gap: 16px;
@@ -779,7 +651,6 @@ export default class ContactComponent extends Vue {
         @include fontUnify(18, 22, 500);
       }
     }
-
     @include mobile {
       max-width: 220px;
     }
@@ -862,7 +733,6 @@ export default class ContactComponent extends Vue {
     @include mobile {
       width: 64px;
     }
-
     & img {
       border-radius: 50%;
     }
@@ -936,7 +806,6 @@ export default class ContactComponent extends Vue {
 
   &__block-employee-messenger {
     transition: 0.2s ease;
-
     &:hover {
       transform: scale(1.1);
     }
@@ -946,7 +815,7 @@ export default class ContactComponent extends Vue {
     @extend %flex-column;
     gap: 16px;
 
-    & > .contact__block-subtitle {
+    & .contact__block-subtitle {
       text-align: left;
     }
   }
@@ -957,8 +826,6 @@ export default class ContactComponent extends Vue {
     width: 100%;
     max-height: 100%;
     overflow: hidden;
-
-    pointer-events: none;
   }
 
   &__block-map {

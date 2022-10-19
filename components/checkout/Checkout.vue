@@ -3,6 +3,7 @@
     <CheckoutHeaderComponent></CheckoutHeaderComponent>
     <main class="main-layout">
       <CheckoutContactsComponent></CheckoutContactsComponent>
+      <CheckoutOrderComponent></CheckoutOrderComponent>
     </main>
     <CheckoutFooterComponent></CheckoutFooterComponent>
   </article>
@@ -14,6 +15,7 @@ import SvgIcon from "@shared/components/svg/SvgIcon.vue";
 import CheckoutHeaderComponent from "@/components/checkout/CheckoutHeader.vue";
 import CheckoutFooterComponent from "@/components/checkout/CheckoutFooter.vue";
 import CheckoutContactsComponent from "@/components/checkout/checkout_body/CheckoutContacts.vue";
+import CheckoutOrderComponent from "@/components/checkout/checkout_body/CheckoutOrder.vue";
 
 @Component({
   components: {
@@ -21,6 +23,7 @@ import CheckoutContactsComponent from "@/components/checkout/checkout_body/Check
     CheckoutHeaderComponent,
     CheckoutFooterComponent,
     CheckoutContactsComponent,
+    CheckoutOrderComponent,
   },
 })
 export default class CheckoutComponent extends Vue {}
@@ -38,6 +41,7 @@ export default class CheckoutComponent extends Vue {}
   @extend %width-main;
 
   @include flex-container(column, center);
+  gap: 16px;
 
   padding: 0 16px;
 }

@@ -16,11 +16,6 @@
         v-show="inputValue.length > 1"
         @click.native="clearInputValue"
       />
-      <SvgIcon
-        class="input__error-icon"
-        :icon="icons['info-empty']"
-        v-show="inputValue.length <= 1"
-      />
     </div>
     <span class="input__error-caption" v-show="inputValue.length <= 1"
       >Неккоректные вводные данные</span
@@ -149,21 +144,14 @@ export default class CheckoutInputComponent extends Vue {
   }
 
   &__clear {
-    @include fixedHW(24px, 24px);
+    // @include fixedHW(20px, 20px);
 
     color: $color-text-lighter;
 
     user-select: none;
     cursor: pointer;
   }
-
-  &__error-icon {
-    @include fixedHW(24px, 24px);
-
-    color: #fb2424;
-    user-select: none;
-  }
-
+  
   &__error-caption {
     @include fontUnify(12, 16);
 

@@ -31,6 +31,7 @@ export enum projectIcons {
 	'dlArrowIcon' = 1,
 	'download-arrow' = 1,
 	'downloadInstrIconMob' = 1,
+	'edit' = 1,
 	'facebook' = 1,
 	'fbIcon' = 1,
 	'footerFacebookIcon' = 1,
