@@ -24,6 +24,7 @@ export default class CheckoutContactsComponent extends Vue {}
 
 <style lang="scss" scoped>
 .contacts {
+  --gap: 16px;
   max-width: 833px;
   width: 100%;
 
@@ -35,19 +36,37 @@ export default class CheckoutContactsComponent extends Vue {}
 
   padding: 32px;
 
-  @include mobile {
+  @include bigMobile {
+    max-width: none;
+
+    align-items: center;
+
     padding: 16px;
   }
 
   &__title {
     @include fontUnify(20, 30, 600);
     text-transform: uppercase;
+
+    @include mobile {
+      text-transform: none;
+      text-align: center;
+    }
   }
 
   &__inputs {
     @include flex-container(row, flex-start, flex-start);
     flex-wrap: wrap;
-    gap: 24px;
+    gap: var(--gap);
+
+    & div {
+      max-width: none;
+      @include set-item-count-in-row(2);
+
+      @include mobile {
+        @include set-item-count-in-row(1);
+      }
+    }
   }
 }
 </style>

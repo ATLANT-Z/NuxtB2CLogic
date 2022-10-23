@@ -1,11 +1,17 @@
 <template>
   <article class="layout">
-    <CheckoutHeaderComponent></CheckoutHeaderComponent>
+    <CheckoutHeader />
     <main class="main-layout">
-      <CheckoutContactsComponent></CheckoutContactsComponent>
-      <CheckoutOrderComponent></CheckoutOrderComponent>
+      <h1 class="main-layout__title">Оформление заказа</h1>
+      <div class="checkout__form">
+        <div class="main-layout__w">
+          <CheckoutContacts />
+          <CheckoutOrderComponent />
+        </div>
+        <CheckoutAsideComponent />
+      </div>
     </main>
-    <CheckoutFooterComponent></CheckoutFooterComponent>
+    <CheckoutFooter />
   </article>
 </template>
 
@@ -16,6 +22,7 @@ import CheckoutHeaderComponent from "@/components/checkout/CheckoutHeader.vue";
 import CheckoutFooterComponent from "@/components/checkout/CheckoutFooter.vue";
 import CheckoutContactsComponent from "@/components/checkout/checkout_body/CheckoutContacts.vue";
 import CheckoutOrderComponent from "@/components/checkout/checkout_body/CheckoutOrder.vue";
+import CheckoutAsideComponent from "@/components/checkout/checkout_body/CheckoutAside.vue";
 
 @Component({
   components: {
@@ -24,6 +31,7 @@ import CheckoutOrderComponent from "@/components/checkout/checkout_body/Checkout
     CheckoutFooterComponent,
     CheckoutContactsComponent,
     CheckoutOrderComponent,
+    CheckoutAsideComponent,
   },
 })
 export default class CheckoutComponent extends Vue {}
@@ -40,9 +48,31 @@ export default class CheckoutComponent extends Vue {}
 .main-layout {
   @extend %width-main;
 
-  @include flex-container(column, center);
-  gap: 16px;
+  @include flex-container(column, center, center);
+  gap: 48px;
 
   padding: 0 16px;
+
+  &__w {
+    @include flex-container(column, flex-start);
+    gap: 16px;
+  }
+
+  &__title {
+    @include fontUnify(36, 44, 700);
+
+    @include mobile {
+      @include fontUnify(24, 34, 700);
+    }
+  }
+}
+
+.checkout__form {
+  @include flex-container(row, flex-start);
+  gap: 16px;
+
+  @include bigMobile {
+    flex-direction: column;
+  }
 }
 </style>

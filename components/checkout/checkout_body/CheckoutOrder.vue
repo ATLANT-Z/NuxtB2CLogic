@@ -109,9 +109,12 @@ export default class CheckoutOrderComponent extends Vue {}
 
   padding: 32px;
 
-  @include mobile {
+  @include bigMobile {
+    max-width: none;
+
     padding: 16px;
   }
+
 }
 .head {
   width: 100%;

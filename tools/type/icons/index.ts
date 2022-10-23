@@ -24,6 +24,7 @@ export enum projectIcons {
 	'cart' = 1,
 	'catalog' = 1,
 	'chat-bubble' = 1,
+	'check-icon' = 1,
 	'compare' = 1,
 	'contactsManagerTelegram' = 1,
 	'contactsManagerViber' = 1,

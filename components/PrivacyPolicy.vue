@@ -1,354 +1,200 @@
 <template>
   <section class="privacy-policy">
     <div class="privacy-policy__w">
-      <h1 class="privacy-policy__title">Политика конфиденциальности</h1>
+      <h1 class="privacy-policy__title">{{_T('@Privacy Policy')}}</h1>
       <ol class="privacy-policy__info">
         <li class="privacy-policy__text">
-          Посетитель не может использовать данный сайт неправильно. В частности,
-          посетитель не должен влиять и вмешиваться в работу данного сайта или
-          получать доступ к информации, опубликованной на данном сайте, не через
-          стандартный интерфейс.
+          {{_T('@Privacy policy p1')}}
         </li>
         <li class="privacy-policy__text">
-          Посетитель должен использовать данный сайт исключительно согласно
-          нормам действующего законодательства Украины. Если администрация сайта
-          обнаружит нарушения посетителем данной ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ И
-          УСЛОВИЙ, или заподозрит посетителя в этом, она может приостановить или
-          полностью закрыть посетителю доступ к сайту.
+          {{_T('@Privacy policy p2')}}
         </li>
         <li class="privacy-policy__text">
           <span class="privacy-policy__entepreneur"
-            >ФЛП "Сандул Анжела Петровна"</span
+            >{{_T('@FLP Privacy Policy')}}</span
           >
-          может в любое время пересмотреть данную ПОЛИТИКУ КОНФИДЕНЦИАЛЬНОСТИ И
-          УСЛОВИЯ.
+          {{_T('@Privacy policy p3')}}
         </li>
         <li class="privacy-policy__text">
-          Сбор и использование персональных данных:
+          {{_T('@Privacy policy p4')}}
           <ol class="privacy-policy__info">
             <li class="privacy-policy__text">
-              Персональные данные - это сведения или совокупность сведений о
-              физическом лице, которое идентифицировано или может быть конкретно
-              идентифицировано.
+            {{_T('@Privacy policy p4.1')}}
             </li>
             <li class="privacy-policy__text">
-              Персональные данные могут быть получены через различные каналы
-              связи. В частности, через обслуживание посетителей сайта,
-              письменно или по электронной форме на веб-сайте.
+           {{_T('@Privacy policy p4.2')}}
             </li>
             <li class="privacy-policy__text">
-              Посетителю на сайте
-              <a href="#" class="privacy-policy__link">Logicpower.ua</a> может
-              быть предложено ввести персональные данные при наличии его
-              согласия. В частности, может быть предложено ввести имя, фамилию,
-              адрес электронной почты, номер телефона, дату рождения, пол, а
-              также зарегистрироваться на сайте с помощью социальных сетей таких
-              как Twitter, Facebook .
+              {{_T('@Privacy policy p4.3-1')}}
+              <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy policy p4.3-2')}}
               <span class="privacy-policy__entepreneur"
-                >ФЛП "Сандул Анжела Петровна"</span
+                >{{_T('@FLP Privacy Policy')}}</span
               >
-              может обращаться к посетителю сайта с просьбой о предоставлении
-              других данных.
+             {{_T('@Privacy policy p4.3-3')}}
             </li>
             <li class="privacy-policy__text">
-              При регистрации на сайте
+              {{_T('@Privacy policy p4.4-1')}}
               <a href="#" class="privacy-policy__link">Logicpower.ua</a>
-              осетитель дает согласие
+              {{_T('@Privacy policy p4.4-2')}}
               <span class="privacy-policy__entepreneur"
-                >ФЛП "Сандул Анжела Петровна"</span
+                >{{_T('@FLP Privacy Policy')}}</span
               >
-              на обработку своих персональных и регистрационных данных. Если
-              посетитель принимает решение предоставить свои персональные
-              данные, он тем самым дает согласие на передачу и хранение этих
-              данных.
+              {{_T('@Privacy policy p4.4-3')}}
             </li>
             <li class="privacy-policy__text">
+             {{_T('@Privacy policy p4.5-1')}}
               <span class="privacy-policy__entepreneur"
-                >ФЛП "Сандул Анжела Петровна"</span
+                >{{_T('@FLP Privacy Policy')}}</span
               >
-            </li>
-            <li class="privacy-policy__text">
-              Персональные данные посетителей используются для обеспечения
-              обмена информацией, отношений в сфере рекламы и коммуникации в
-              соответствии с Законами Украины 'О защите персональных данных',
-              'Об информации', 'О рекламе', 'О телекоммуникациях', 'О
-              предпринимательстве', 'О защите информации в
-              информационно-телекоммуникационных системах', НД ТЗИ 2.5-010-03
-              'Требования к защите информации WEB-страницы от
-              несанкционированного доступа', а также Устава
+              {{_T('@Privacy policy p4.5-2')}}
               <span class="privacy-policy__entepreneur"
-                >ФЛП "Сандул Анжела Петровна"</span
-              >
-              и нормативных актов, регулирующих деятельность
-              <span class="privacy-policy__entepreneur"
-                >ФЛП "Сандул Анжела Петровна"</span
+                >{{_T('@FLP Privacy Policy')}}</span
               >.
             </li>
             <li class="privacy-policy__text">
-              Персональные данные посетителей могут храниться в течение 3 лет
-              после того, как субъект персональных данных не является
-              посетителем сайта
+            {{_T('@Privacy policy p4.6')}}
               <a href="#" class="privacy-policy__link">Logicpower.ua</a>.
             </li>
             <li class="privacy-policy__text">
-              Сервер
+              {{_T('@Privacy policy p4.7-1')}}
               <span class="privacy-policy__entepreneur"
-                >ФЛП "Сандул Анжела Петровна"</span
+                >{{_T('@FLP Privacy Policy')}}</span
               >
-              временно регистрирует доменное имя или IP - адрес компьютера
-              посетителя, а также дату доступа, файлы (имя файла и URL), код
-              ответа HTTP и веб-сайт, с которого посетитель попал на сайт
-              GREENVISION.UA, количество байт, переданных в ходе сессии.
+              {{_T('@Privacy policy p4.7-2')}}
             </li>
             <li class="privacy-policy__text">
-              При работе сайта
+              {{_T('@Privacy policy p4.8-1')}}
               <a href="#" class="privacy-policy__link">Logicpower.ua</a>
-              используются файлы cookie . С их помощью возможна идентификация
-              браузера посетителя. В данных файлах возможно сохранение настроек
-              пользователей и других сведений. Посетитель может настроить
-              браузер таким образом, чтобы отклонять все файлы cookie или
-              оповещать об их отправке.
+              {{_T('@Privacy policy p4.8-2')}}
             </li>
             <li class="privacy-policy__text">
-              <a href="#" class="privacy-policy__link">Logicpower.ua</a>
-              безопасным , защищенным и удобным. Файлы cookie обеспечивают
-              поддержку функций безопасности и их запуск. Файлы cookie также
-              позволяют отслеживать нарушения ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ И
-              УСЛОВИЙ посетителями или устройствами. Файлы cookie помогают
-              оценить количество и частоту запросов, а также выявлять и
-              блокировать тех посетителей или устройства, которые пытаются
-              выполнить пакетные загрузки информации с веб-сайта.
+              {{_T('@Privacy policy p4.9')}}
             </li>
             <li class="privacy-policy__text">
-              С помощью системы Google Analytics
+              {{_T('@Privacy policy p4.10-1')}}
               <span class="privacy-policy__entepreneur"
-                >ФЛП "Сандул Анжела Петровна"</span
+                >{{_T('@FLP Privacy Policy')}}</span
               >
-              собирает статистику о посещении сайта
-              <a href="#" class="privacy-policy__link">Logicpower.ua</a>, такую
-              как посещаемые страницы,количество просмотров страниц, информацию,
-              которая была загружена, домены интернет-провайдеров и страны
-              происхождения посетителей, а также адреса веб-сайтов, которые были
-              посещены до и после сайта<a href="#" class="privacy-policy__link"
+          {{_T('@Privacy policy p4.10-2')}}
+              <a href="#" class="privacy-policy__link">Logicpower.ua</a>, {{_T('@Privacy policy p4.10-3')}} <a href="#" class="privacy-policy__link"
                 >Logicpower.ua</a
               >
-              и т.д. и т.д. Ни одно из этих действий не связано с посетителем
-              лично и измеряется только в совокупности.
+          {{_T('@Privacy policy p4.10-4')}}
             </li>
             <li class="privacy-policy__text">
-              Лица в возрасте до 18 лет не имеют права использовать любые услуги
-              на сайте
-              <a href="#" class="privacy-policy__link">Logicpower.ua</a>, в
-              частности регистрацию.
+              {{_T('@Privacy policy p4.11-1')}}
+              <a href="#" class="privacy-policy__link">Logicpower.ua</a>, {{_T('@Privacy policy p4.11-2')}}
               <span class="privacy-policy__entepreneur"
-                >ФЛП "Сандул Анжела Петровна"</span
+                >{{_T('@FLP Privacy Policy')}}</span
               >
-              никогда намеренно не будет собирать данные о несовершеннолетних,
-              не будет использовать их, а также не будет разглашать их третьей
-              стороне без соответствующего разрешения.
+              {{_T('@Privacy policy p4.11-3')}}
               <span class="privacy-policy__entepreneur"
-                >ФЛП "Сандул Анжела Петровна"</span
+                >{{_T('@FLP Privacy Policy')}}</span
               >
-              советует родителям и опекунам следить за тем, какие сайты посещают
-              их дети.
-            </li>
-            <li class="privacy-policy__text">
-              Сайт
-              <a href="#" class="privacy-policy__link">Logicpower.ua</a> может
-              использовать сервис защиты от DDOS атак Google Project Shield. Это
-              значит, что компания Google Inc. обрабатывать данные, собранные в
-              процесси работы Project Shield в соответствии с политикой
-              конфиденциальности Goolge Inc.
+              {{_T('@Privacy policy p4.11-4')}}
             </li>
           </ol>
         </li>
         <li class="privacy-policy__text">
-          Сайт <a href="#" class="privacy-policy__link">Logicpower.ua</a> может
-          содержать ссылки на сайты, которые не управляются ФЛП "Сандул Анжела
-          Петровна". Такие ссылки приведены исключительно для информационных
-          целей.
+          {{_T('@Privacy Policy p5-1')}} <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy policy p5-2')}} {{_T('@FLP Privacy Policy')}}. {{_T('@Privacy policy p5-3')}}
         </li>
         <li class="privacy-policy__text">
-          Техническое оснащение страниц сайта
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a> может
-          использовать сервис защиты от DDOS атак Google Project Shield. Это
-          значит, что компания Google Inc. обрабатывать данные, собранные в
-          процесси работы Project Shield в соответствии с политикой
-          конфиденциальности Goolge Inc.
+          {{_T('@Privacy policy p6-1')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy policy p6-2')}}
           <ol class="privacy-policy__info">
             <li class="privacy-policy__text">
-              Эти модули могут быть кнопками синхронизации аккаунта на сайте
-              <a href="#" class="privacy-policy__link">Logicpower.ua</a> Like,
-              Рассказать или соответственно "Мне нравится". Если посетитель
-              открывал одну из веб-страниц , оснащенную таким плагином, его
-              интернет-браузер непосредственно подключит его к серверам
-              Facebook, Twitter, LinkedIn, Google+ или Youtube. Плагин будет
-              передавать на сервер данные о том, какие именно веб-страницы сайта
+              {{_T('@Privacy policy p6.1-1')}}
+              <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy policy p6.1-2')}}
               <a href="#" class="privacy-policy__link">Logicpower.ua</a>
-              посетитель просматривал.
+              {{_T('@Privacy policy p6.1-3')}}
             </li>
             <li class="privacy-policy__text">
-              При использовании любых функций плагина, эта информация также
-              будет синхронизирована с учетной записью посетителя на Facebook,
-              Twitter, LinkedIn, , Google+ или Youtube. Более подробную
-              информацию о сборе и использовании данных сетями Facebook,
-              Twitter, LinkedIn, , Google+ или Youtube, а также о правах и
-              возможностях по защите персональных данных в данном контексте
-              можно найти в разделе о конфиденциальности на сайтах Facebook,
-              Twitter, LinkedIn, , Google+ или Youtube.
+              {{_T('@Privacy policy p6.2')}}
             </li>
             <li class="privacy-policy__text">
-              Во избежание связи сетей Facebook, Twitter, LinkedIn, Google+ или
-              Youtube с сайтом
-              <a href="#" class="privacy-policy__link">Logicpower.ua</a> и
-              последующего соотнесения данной информации с аккаунтом, посетитель
-              должен выйти из учетной записи сети перед посещением сайта
+              {{_T('@Privacy policy p6.3-1')}}
+              <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy policy p6.3-2')}}
               <a href="#" class="privacy-policy__link">Logicpower.ua</a>.
             </li>
           </ol>
         </li>
         <li class="privacy-policy__text">
-          Сведения о трафике, который проходит через сеть ФЛП 'Сандул Анжела
-          Петровна', по электронной почте, и активность клиентов в сети Интернет
-          на сайте
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a> защищены в
-          соответствии с законодательством. Это означает, что ФЛП 'Сандул Анжела
-          Петровна' и его сотрудники не могут вмешиваться в тайну
-          телекоммуникаций.
+          {{_T('@Privacy Policy p7-1')}} {{_T('@FLP Privacy Policy')}}, {{_T('@Privacy Policy p7-2')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy Policy p7-3')}} {{_T('@FLP Privacy Policy')}} {{_T('@Privacy Policy p7-4')}}
         </li>
         <li class="privacy-policy__text">
           <span class="privacy-policy__entepreneur"
-            >ФЛП "Сандул Анжела Петровна"</span
+            >{{_T('@FLP Privacy Policy')}}</span
           >
-          имеет право предоставить любую личную информацию посетителей сайта
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a> по
-          требованию правоохранительных органов, по решению/постановлению суда
-          или в рамках других законных процедур, или по другому требованию
-          согласно действующему законодательству Украины.
+          {{_T('@Privacy Policy p8-1')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy Policy p8-2')}}
         </li>
         <li class="privacy-policy__text">
           <span class="privacy-policy__entepreneur"
-            >ФЛП "Сандул Анжела Петровна"</span
+            >{{_T('@FLP Privacy Policy')}}</span
           >
-          не несет ответственности за упущенную выгоду или упущенную прибыль,
-          недополученный доход, потерю данных или любые другие убытки
-          посетителей сайта
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a>, если
-          таковые возникли при пользовании сайта
+          {{_T('@Privacy Policy p9-1')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy Policy p9-2')}}         
+        </li>
+        <li class="privacy-policy__text">
+          <span class="privacy-policy__entepreneur"
+            >{{_T('@FLP Privacy Policy')}}</span
+          >
+          {{_T('@Privacy policy p10-1')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy policy p10-2')}}
+          <span class="privacy-policy__entepreneur"
+            >{{_T('@FLP Privacy Policy')}}</span
+          >
+          {{_T('@Privacy policy p10-3')}}
+        </li>
+        <li class="privacy-policy__text">
+          {{_T('@Privacy policy p11-1')}} <a href="#" class="privacy-policy__link">Logicpower.ua</a>, {{_T('@Privacy policy p11-2')}}
+          <span class="privacy-policy__entepreneur"
+            >{{_T('@FLP Privacy Policy')}}</span
+          >
+          {{_T('@Privacy policy p11-3')}} <a href="#" class="privacy-policy__link">Logicpower.ua</a>, {{_T('@Privacy policy p11-4')}}
+        </li>
+        <li class="privacy-policy__text">
+          {{_T('@Privacy policy p12-1')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy policy p12-2')}}
+          <span class="privacy-policy__entepreneur"
+            >{{_T('@FLP Privacy Policy')}}</span
+          >
+          {{_T('@Privacy policy p12-3')}}
+        </li>
+        <li class="privacy-policy__text">
+          {{_T('@Privacy policy p13-1')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a>{{_T('@Privacy policy p13-2')}} {{_T('@FLP Privacy Policy')}}.{{_T('@Privacy policy p13-3')}}
           <a href="#" class="privacy-policy__link">Logicpower.ua</a>.
         </li>
         <li class="privacy-policy__text">
-          <span class="privacy-policy__entepreneur"
-            >ФЛП "Сандул Анжела Петровна"</span
-          >
-          не гарантирует и не утверждает, что использование материала, который
-          предоставляется на сайте
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a> не повредит
-          интересам третьих лиц.
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a> не повредит
-          интересам третьих лиц.
+          {{_T('@Privacy policy p14-1')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy policy p14-2')}}
         </li>
         <li class="privacy-policy__text">
+          {{_T('@Privacy policy p15-1')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy policy p15-2')}}
           <span class="privacy-policy__entepreneur"
-            >ФЛП "Сандул Анжела Петровна"</span
-          >
-          принимает меры, чтобы информация на сайте
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a> была
-          достоверной. Однако
-          <span class="privacy-policy__entepreneur"
-            >ФЛП "Сандул Анжела Петровна"</span
-          >
-          не берет на себя ответственность и не гарантирует, что предоставленная
-          информация и данные являются точными, объективными и актуальными на
-          момент просмотра.
-        </li>
-        <li class="privacy-policy__text">
-          Авторские материалы, опубликованные на сайте Logicpower.us, являются
-          точкой зрения журналистов, не является нормой и не должны так
-          толковаться.
-          <span class="privacy-policy__entepreneur"
-            >ФЛП "Сандул Анжела Петровна"</span
-          >
-          не несет ответственности за точность, объективность и актуальность
-          информации, опубликованной на сайте"Сандул Анжела Петровна" не несет
-          ответственности за точность, объективность и актуальность информации,
-          опубликованной на сайте
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a> в
-          частности, со ссылкой на другие источники.
-        </li>
-        <li class="privacy-policy__text">
-          Все права на сайт
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a> и его
-          содержание принадлежат
-          <span class="privacy-policy__entepreneur"
-            >ФЛП "Сандул Анжела Петровна"</span
-          >
-          или используются ФЛП и его содержание принадлежат ФЛП по согласованию
-          с правообладателями. Данный сайт в целом, и отдельные его элементы
-          охраняются Законом Украины "Об авторском праве и смежных правах",
-          Международными правовыми актами и другими актами действующего
-          законодательства Украины.
-        </li>
-        <li class="privacy-policy__text">
-          Посетители сайта не должны распространять, изменять, передавать,
-          использовать или использовать повторно любую информацию с сайта
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a> для любой
-          публичной или коммерческой цели без письменного разрешения ФЛП "Сандул
-          Анжела Петровна". Посетители должны соблюдать все авторские права и
-          другие примечания о собственности на загруженные и/или копируемые
-          материалы. Скопированная информация должна содержать активную
-          гиперссылку на сайт
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a>.
-        </li>
-        <li class="privacy-policy__text">
-          Копирование информации с сайта
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a> может быть
-          осуществлено в некоммерческих целях для размещения на страницах
-          пользователя, в блогах, социальных сетях.
-        </li>
-        <li class="privacy-policy__text">
-          Использование посетителем сайта
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a>. A
-          происходит на собственный риск пользователя. В пределах, которые
-          максимально позволяет закон, ни
-          <span class="privacy-policy__entepreneur"
-            >ФЛП "Сандул Анжела Петровна"</span
-          >, ни любая другая сторона, вовлеченная в создание, производство или
-          обслуживание сайта
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a>, не несет
-          ответственности за прямые, косвенные или случайные убытки, которые
-          когда-либо причинялись, и которые были вызваны тем, что посетитель
-          имел доступ к сайту
+            >{{_T('@FLP Privacy Policy')}}</span
+          >, {{_T('@Privacy policy p15-3')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a>, {{_T('@Privacy policy p15-4')}}
           <a href="#" class="privacy-policy__link">Logicpower.ua</a>,
-          пользовался им или надеялся на него, даже если ФЛП "Сандул Анжела
-          Петровна" предупреждало посетителя о возможности таких убытков и
-          потерь.
+          {{_T('@Privacy policy p15-5')}} {{_T('@FLP Privacy Policy')}} {{_T('@Privacy policy p15-6')}}
         </li>
         <li class="privacy-policy__text">
           <span class="privacy-policy__entepreneur"
-            >ФЛП "Сандул Анжела Петровна"</span
+            >{{_T('@FLP Privacy Policy')}}</span
           >
-          ни в коем случае не будет причастна к одной из сторон прямого,
-          косвенного, преднамеренного или непреднамеренного нанесения убытков за
-          любое использование сайта
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a>, или на
-          любом другом взаимосвязанном сайте включая, без ограничения, любую
-          потерю доходов, гудвила, потерю программ или других данных в системе
-          обработки информации посетителя, даже если ФЛП "Сандул Анжела
-          Петровна" было быстро проинформирован о возможности таких убытков.
+          {{_T('@Privacy policy p16-1')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a>, {{_T('@Privacy policy p16-2')}} {{_T('@FLP Privacy Policy')}} {{_T('@Privacy policy p16-3')}}
         </li>
         <li class="privacy-policy__text">
-          При работе с сайтом
-          <a href="#" class="privacy-policy__link">Logicpower.ua</a> посетителю
-          не предоставляются права на интеллектуальную собственность ни на один
-          сайт, ни на его содержание или на использование каких-либо элементов
-          брендинга или логотипов сайта
+          {{_T('@Privacy policy p17-1')}}
+          <a href="#" class="privacy-policy__link">Logicpower.ua</a> {{_T('@Privacy policy p17-2')}}
           <a href="#" class="privacy-policy__link">Logicpower.ua</a>.
         </li>
         <li class="privacy-policy__text">
-          Якщо Ви відвідали цей сайт, Ви автоматично погоджуєтеся з цією
-          ПОЛІТИКОЮ КОНФІДЕНЦІЙНОСТІ ТА УМОВАМИ. Якщо Ви не згодні з даною
-          ПОЛІТИКОЮ КОНФІДЕНЦІЙНОСТІ ТА УМОВАМИ, Ви повинні покинути цей сайт.
+          {{_T('@Privacy policy p18')}}
         </li>
       </ol>
     </div>
@@ -362,7 +208,7 @@ import {Component, Vue } from "~/tools/version-types";
 export default class PrivacyPolicyComponent extends Vue {}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .privacy-policy {
   @extend %flex-column;
   align-items: center;
@@ -373,24 +219,19 @@ export default class PrivacyPolicyComponent extends Vue {}
   &__w {
     @extend %width-content;
     @extend %flex-column;
-    gap: 54px;
+    gap: 48px;
   }
 
   &__title {
-    @include fontUnify(42, 50, 700);
+    @include fontUnify(28, 34, 700);
     text-align: center;
-    text-transform: uppercase;
 
     @include mobile {
-      @include fontUnify(24, 34, 700);
-      letter-spacing: 0.02em;
+      @include fontUnify(24, 28, 700);
     }
   }
 
   &__info {
-    @include fontUnify(18, 24);
-    letter-spacing: 0.02em;
-
     list-style: none;
     counter-reset: li;
 
@@ -409,10 +250,10 @@ export default class PrivacyPolicyComponent extends Vue {}
   }
 
   &__entepreneur {
-    font-weight: 700;
   }
 
   &__text {
+    @include fontUnify;
     margin-bottom: 16px;
 
     &:last-child {

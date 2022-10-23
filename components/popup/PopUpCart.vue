@@ -1,10 +1,10 @@
 <template>
-  <UiPopup :id="popupService.names['cart-popup']" v-slot="{parent}">
+  <UiPopup :id="popupService.names['cart-popup']" v-slot="{ parent }">
     <div class="cart popup">
       <div class="cart__head">
         <p class="cart__title">Корзина</p>
         <button class="cart__cancel" @click="parent.close">
-          <SvgIcon :icon="icons['cross']"/>
+          <SvgIcon class="cart__cancel-icon" :icon="icons['cross']" />
         </button>
       </div>
       <ul class="card__list">
@@ -12,28 +12,29 @@
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -49,35 +50,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -93,35 +95,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -137,35 +140,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -181,35 +185,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -225,35 +230,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -269,35 +275,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -313,35 +320,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -357,35 +365,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -401,35 +410,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -445,35 +455,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -489,35 +500,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -533,35 +545,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -577,35 +590,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -621,35 +635,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -665,35 +680,36 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
         <li class="card__item">
           <div class="card__prod">
             <div class="card__img-w">
               <img
-                  class="card__img"
-                  src="https://logicpower.ua/storage/1911984/16157_1.png"
-                  alt=""
+                class="card__img"
+                src="https://logicpower.ua/storage/1911984/16157_1.png"
+                alt=""
               />
             </div>
             <div class="card__info">
               <div class="card__main">
                 <a href="" class="card__title"
-                >Аккумулятор LP LiFePО4 6V - 12 Ah</a
+                  >Аккумулятор LP LiFePО4 6V - 12 Ah</a
                 >
-                <div class="card__code">Код:
+                <div class="card__code">
+                  Код:
                   <span>1324</span>
                 </div>
               </div>
               <div class="card__footer">
                 <div class="card__counter">
                   <div class="card__counter-minus">
-                    <img src="@/assets/icons/minus.svg" alt=""/>
+                    <img src="@/assets/icons/minus.svg" alt="" />
                   </div>
-                  <input type="number" class="card__counter-input" value="1"/>
+                  <input type="number" class="card__counter-input" value="1" />
                   <div class="card__counter-plus">
-                    <img src="@/assets/icons/plus.svg" alt=""/>
+                    <img src="@/assets/icons/plus.svg" alt="" />
                   </div>
                 </div>
                 <!-- <div class="card__price"><span>20954</span> &#8372;</div> -->
@@ -709,7 +725,7 @@
             </div>
           </div>
           <button class="card__del">
-            <img src="@/assets/icons/trash.svg" alt=""/>
+            <img src="@/assets/icons/trash.svg" alt="" />
           </button>
         </li>
       </ul>
@@ -728,15 +744,14 @@
 </template>
 
 <script lang="ts">
-import {Component, Vue} from "~/tools/version-types";
+import { Component, Vue } from "~/tools/version-types";
 import UiPopup from "@shared/components/ui/UiPopup.vue";
 import SvgIcon from "@shared/components/svg/SvgIcon.vue";
 
 @Component({
-  components: {SvgIcon, UiPopup}
+  components: { SvgIcon, UiPopup },
 })
-export default class PopUpCartComponent extends Vue {
-}
+export default class PopUpCartComponent extends Vue {}
 </script>
 
 <style lang="scss" scoped>
@@ -790,8 +805,11 @@ input[type="number"] {
   }
 
   &__cancel {
-    &:hover svg path {
-      stroke: red;
+  }
+
+  &__cancel-icon {
+    &:hover {
+      color: red;
     }
   }
 }
